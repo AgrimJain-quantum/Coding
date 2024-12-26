@@ -7,7 +7,7 @@ print("your band name is " + city + " "+ name)
 
 
 
-print("hello world \n hello world")
+print("hello world \nhello world")
 print("hello" + " " + "world")
-print("hello",end="")
+print("hello",end=" ")
 print("world")
