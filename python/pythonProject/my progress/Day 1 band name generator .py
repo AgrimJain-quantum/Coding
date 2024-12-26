@@ -4,3 +4,10 @@ print(city)
 name = input("what is your name ?")
 print(name)
 print("your band name is " + city + " "+ name)
+
+
+
+print("hello world \n hello world")
+print("hello" + " " + "world")
+print("hello",end="")
+print("world")
