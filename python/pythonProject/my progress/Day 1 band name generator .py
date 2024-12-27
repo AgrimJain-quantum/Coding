@@ -16,3 +16,21 @@ print(bmi)
 print(int(bmi))
 print(round(bmi))
 print(round(bmi,2))
+print(f"your bmi is {bmi}")
+print("your bmi is " + str(bmi))    
+print("your bmi is " + str(int(bmi)))
+print("your bmi is " + str(round(bmi)))
+print("your bmi is " + str(round(bmi,2)))
+
+
+
+if bmi < 18.5:
+    print("underweight")
+elif bmi < 25:
+    print("normal weight")  
+elif bmi < 30:
+    print("overweight")
+elif bmi < 35:
+    print("obese")
+else:
+    print("clinically obese")
