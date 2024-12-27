@@ -42,3 +42,16 @@ print("hello"[3])
 print("hello"[4])
 print("hello"[-1])
 print("23456"[3])
+print(123_456_789) # this is a way to write a number with underscores
+print(123456789)
+print(123456789 + 123456789)
+print(3.14159)
+
+## boolean data type
+print(True)
+print(False)
+print(3 > 5)
+print(3 < 5)
+print(3 == 5)
+print(3 >= 5)
+print(3 <= 5)
