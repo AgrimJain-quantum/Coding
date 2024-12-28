@@ -69,4 +69,3 @@
 # print(6 // 2)
 # print(6 ** 2)
 w = print(3 * 3 + 3 / 3 - 3)
-print(str(w))
