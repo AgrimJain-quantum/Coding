@@ -68,4 +68,6 @@
 
 # print(6 // 2)
 # print(6 ** 2)
-w = print(3 * 3 + 3 / 3 - 3)
+w = 3.14
+q = int(w)
+print(q)
