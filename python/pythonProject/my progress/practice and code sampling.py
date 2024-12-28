@@ -14,7 +14,7 @@ print(type(type(1)))
 int("123")
 print(int("123"))   
 print(int(123.45))
-print(int("123.45"))
+
 print("Number of letters in your name: " + str(len(input("What is your name? "))))
 
 x = 5    # int
@@ -71,3 +71,8 @@ print(6 ** 2)
 w = 3.14
 q = int(w)
 print(q)
+
+print(3 * 3 + 3 / 3 - 3)
+print(3 * (3 + 3) / 3 - 3)
+
+print(3 * (3 + 3 / 3) - 3)
