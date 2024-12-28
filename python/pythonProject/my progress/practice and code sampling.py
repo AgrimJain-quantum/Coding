@@ -76,3 +76,7 @@ print(3 * 3 + 3 / 3 - 3)
 print(3 * (3 + 3) / 3 - 3)
 
 print(3 * (3 + 3 / 3) - 3)
+bmi = 84 / (1.8 ** 2)
+print(bmi)
+print(int(bmi))
+print(round(bmi, 2))
