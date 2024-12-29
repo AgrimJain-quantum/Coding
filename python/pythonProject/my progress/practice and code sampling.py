@@ -164,3 +164,18 @@ if age >= 18:
         print("You cannot vote because you do not have a voter ID")
 else:
     print("You cannot vote because you are underage")
+
+#input for weight and height
+weight = int(input("Enter your weight in kg: "))
+height = float(input("Enter your height in m: "))
+
+bmi = weight / (height ** 2)
+
+# 🚨 Do not modify the values above
+# Write your code below 👇
+if bmi < 18:
+    print("underweight")
+elif bmi >= 18 and bmi < 25:
+    print("normal weight")
+else:
+    print("overweight")
