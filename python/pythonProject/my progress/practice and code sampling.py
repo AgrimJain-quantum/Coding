@@ -234,3 +234,6 @@ print(random_number_0_to_1)
 
 random_float = random.uniform(1,10)
 print(random_float)
+ 
+import numpy as np
+print(np.array([1, 2, 3]))
