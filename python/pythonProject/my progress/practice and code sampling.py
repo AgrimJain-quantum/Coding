@@ -216,10 +216,6 @@
 # for _ in range(10):
 #     print(lcg.next())
 
-
-
-import random
-
 # random_randomint = random.randint(1, 10) # Example: 7
 # print(random_randomint)
 
@@ -229,13 +225,13 @@ import random
 # print(Pizza_dilevery_code.add_pepperoni)
 # print(Pizza_dilevery_code.extra_cheese)
 
-random_number_0_to_1 = random.random() * 10
-print(random_number_0_to_1)
+# random_number_0_to_1 = random.random() * 10
+# print(random_number_0_to_1)
 
-random_float = random.uniform(1,10)
-print(random_float)
+# random_float = random.uniform(1,10)
+# print(random_float)
  
-import numpy as np
-print(np.array([1, 2, 3]))
+# import numpy as np
+# print(np.array([1, 2, 3]))
 
-
+import random
