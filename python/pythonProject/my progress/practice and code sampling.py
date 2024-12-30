@@ -219,11 +219,11 @@ for _ in range(10):
 random_randomint = random.randint(1, 10) # Example: 7
 print(random_randomint)
 
-import Pizza_dilevery_code
-print(Pizza_dilevery_code.bill)
-print(Pizza_dilevery_code.size)
-print(Pizza_dilevery_code.add_pepperoni)
-print(Pizza_dilevery_code.extra_cheese)
+import sample_programs
+print(sample_programs.bill)
+print(sample_programs.size)
+print(sample_programs.add_pepperoni)
+print(sample_programs.extra_cheese)
 
 random_number_0_to_1 = random.random() * 10
 print(random_number_0_to_1)
