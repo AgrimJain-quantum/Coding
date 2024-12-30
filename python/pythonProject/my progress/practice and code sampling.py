@@ -225,7 +225,9 @@ print(random_randomint)
 
 import Pizza_dilevery_code
 print(Pizza_dilevery_code.bill)
+print(Pizza_dilevery_code.size)
+print(Pizza_dilevery_code.add_pepperoni)
+print(Pizza_dilevery_code.extra_cheese)
 
-
-
-
+random_randomint = random.random() 
+print(random_randomint)
