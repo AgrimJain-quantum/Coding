@@ -220,14 +220,17 @@
 
 import random
 
-random_randomint = random.randint(1, 10) # Example: 7
-print(random_randomint)
+# random_randomint = random.randint(1, 10) # Example: 7
+# print(random_randomint)
 
-import Pizza_dilevery_code
-print(Pizza_dilevery_code.bill)
-print(Pizza_dilevery_code.size)
-print(Pizza_dilevery_code.add_pepperoni)
-print(Pizza_dilevery_code.extra_cheese)
+# import Pizza_dilevery_code
+# print(Pizza_dilevery_code.bill)
+# print(Pizza_dilevery_code.size)
+# print(Pizza_dilevery_code.add_pepperoni)
+# print(Pizza_dilevery_code.extra_cheese)
 
-random_randomint = random.random() 
-print(random_randomint)
+random_number_0_to_1 = random.random() * 10
+print(random_number_0_to_1)
+
+random_float = random.uniform(1,10)
+print(random_float)
