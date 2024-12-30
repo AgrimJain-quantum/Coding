@@ -219,12 +219,13 @@
 
 
 import random
-print(random.random())
-print(random.uniform(10, 20))  # Example: 15.678
-print(random.randint(1, 10))  # Example: 7
-print(random.randrange(0, 20, 2))  # Example: 14
-items = ['apple', 'banana', 'cherry']
-print(random.choice(items))  # Example: 'banana'
+
+random_randomint = random.randint(1, 10) # Example: 7
+print(random_randomint)
+
+import Pizza_dilevery_code
+print(Pizza_dilevery_code.bill)
+
 
 
 
