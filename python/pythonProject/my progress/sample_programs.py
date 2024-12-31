@@ -34,4 +34,6 @@ if random_heads_or_tails == 1:
 else:
     print("Tails")
 
-    
+people = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+print(random.choice(people))
+print()
