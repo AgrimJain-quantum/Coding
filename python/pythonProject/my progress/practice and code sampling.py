@@ -248,3 +248,7 @@ mixed_list = [1, "Apple", 3.14, True]
 print(mixed_list[1])
 another_list = list([1.0,1.2,1.4,1.6,1.8,2.0])
 print(another_list[0])
+mixed_list.append("agrim")
+print(mixed_list)
+mixed_list.extend(another_list)
+print(mixed_list)
