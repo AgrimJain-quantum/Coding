@@ -254,3 +254,7 @@ mixed_list.extend(another_list)
 print(mixed_list)
 mixed_list.insert(2, "Banana")
 print(mixed_list)
+my_list = [10, 20, 30]
+for item in my_list:
+    print(item)
+# Output: 10, 20, 30
