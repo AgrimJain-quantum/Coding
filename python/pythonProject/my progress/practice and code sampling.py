@@ -233,13 +233,13 @@
  
 # import numpy as np
 # print(np.array([1, 2, 3]))
-
-# import random
-
-
+import random
 fruits = ["Apple", "Banana", "Cherry"]
 states_of_India = ["Karnataka", "Maharashtra", "Kerala", "Tamil Nadu", "Gujarat", "Rajasthan", "Uttar Pradesh", "Madhya Pradesh", "Bihar", "West Bengal", "Andhra Pradesh", "Telangna", "Odisha", "Assam", "Jharkhand", "Chhattisgarh", "Uttarakhand", "Himachal Pradesh", "Tripura", "Meghalaya", "Manipur", "Nagaland", "Goa", "Arunachal Pradesh", "Mizoram", "Sikkim", "Delhi", "Punjab", "Haryana", "Jammu and Kashmir", "Chandigarh", "Dadra and Nagar Haveli", "Daman and Diu", "Lakshadweep", "Puducherry", "Andaman and Nicobar Islands"]
 print(random.choice(fruits))
 print(random.choice(states_of_India))
-
 print(states_of_India[2])
+print(states_of_India[-1])
+print(states_of_India[0:5])
+print(states_of_India[:5])
+print(states_of_India[5:])
