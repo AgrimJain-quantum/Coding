@@ -233,28 +233,34 @@
  
 # import numpy as np
 # print(np.array([1, 2, 3]))
-import random
-fruits = ["Apple", "Banana", "Cherry"]
-states_of_India = ["Karnataka", "Maharashtra", "Kerala", "Tamil Nadu", "Gujarat", "Rajasthan", "Uttar Pradesh", "Madhya Pradesh", "Bihar", "West Bengal", "Andhra Pradesh", "Telangna", "Odisha", "Assam", "Jharkhand", "Chhattisgarh", "Uttarakhand", "Himachal Pradesh", "Tripura", "Meghalaya", "Manipur", "Nagaland", "Goa", "Arunachal Pradesh", "Mizoram", "Sikkim", "Delhi", "Punjab", "Haryana", "Jammu and Kashmir", "Chandigarh", "Dadra and Nagar Haveli", "Daman and Diu", "Lakshadweep", "Puducherry", "Andaman and Nicobar Islands"]
-print(random.choice(fruits))
-print(random.choice(states_of_India))
-print(states_of_India[2])
-print(states_of_India[-1])
-print(states_of_India[0:5])
-print(states_of_India[:5])
-print(states_of_India[5:])
+# import random
+# fruits = ["Apple", "Banana", "Cherry"]
+# states_of_India = ["Karnataka", "Maharashtra", "Kerala", "Tamil Nadu", "Gujarat", "Rajasthan", "Uttar Pradesh", "Madhya Pradesh", "Bihar", "West Bengal", "Andhra Pradesh", "Telangna", "Odisha", "Assam", "Jharkhand", "Chhattisgarh", "Uttarakhand", "Himachal Pradesh", "Tripura", "Meghalaya", "Manipur", "Nagaland", "Goa", "Arunachal Pradesh", "Mizoram", "Sikkim", "Delhi", "Punjab", "Haryana", "Jammu and Kashmir", "Chandigarh", "Dadra and Nagar Haveli", "Daman and Diu", "Lakshadweep", "Puducherry", "Andaman and Nicobar Islands"]
+# print(random.choice(fruits))
+# print(random.choice(states_of_India))
+# print(states_of_India[2])
+# print(states_of_India[-1])
+# print(states_of_India[0:5])
+# print(states_of_India[:5])
+# print(states_of_India[5:])
 
-mixed_list = [1, "Apple", 3.14, True]
-print(mixed_list[1])
-another_list = list([1.0,1.2,1.4,1.6,1.8,2.0])
-print(another_list[0])
-mixed_list.append("agrim")
-print(mixed_list)
-mixed_list.extend(another_list)
-print(mixed_list)
-mixed_list.insert(2, "Banana")
-print(mixed_list)
-my_list = [10, 20, 30]
-for item in my_list:
-    print(item)
-# Output: 10, 20, 30
+# mixed_list = [1, "Apple", 3.14, True]
+# print(mixed_list[1])
+# another_list = list([1.0,1.2,1.4,1.6,1.8,2.0])
+# print(another_list[0])
+# mixed_list.append("agrim")
+# print(mixed_list)
+# mixed_list.extend(another_list)
+# print(mixed_list)
+# mixed_list.insert(2, "Banana")
+# print(mixed_list)
+# my_list = [10, 20, 30]
+# for item in my_list:
+#     print(item)
+# # Output: 10, 20, 30
+# states_of_India.extend(mixed_list)
+# print(states_of_India)
+# states_of_India.remove("Apple")
+# print(states_of_India)
+
+
