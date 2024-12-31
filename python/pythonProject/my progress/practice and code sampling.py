@@ -264,30 +264,37 @@
 # print(states_of_India)
 
 
-my_list = [10,20,30,40,50]
-print(my_list[0])
-print(my_list[-1])
-my_list[1] = 25
-print(my_list)
+# my_list = [10,20,30,40,50]
+# print(my_list[0])
+# print(my_list[-1])
+# my_list[1] = 25
+# print(my_list)
 
-my_list.append(60)
-print(my_list)
-my_list.insert(2,15)
-print(my_list)
-my_list.extend([70,80,90])
-print(my_list)
-my_list.remove(40)
-print(my_list)
-my_list.pop(0)
-print(my_list)
-my_list.sort()
-print(my_list)
-my_list.reverse()
-print(my_list)
-my_list.clear()
-print(my_list)
-my_list.count(20)
-print(my_list)
-my_list.copy()
-print(my_list)
+# my_list.append(60)
+# print(my_list)
+# my_list.insert(2,15)
+# print(my_list)
+# my_list.extend([70,80,90])
+# print(my_list)
+# my_list.remove(40)
+# print(my_list)
+# my_list.pop(0)
+# print(my_list)
+# my_list.sort()
+# print(my_list)
+# my_list.reverse()
+# print(my_list)
+# my_list.clear()
+# print(my_list)
+# my_list.count(20)
+# print(my_list)
+# my_list.copy()
+# print(my_list)
+
+# my_list = [10, 20, 30]
+# for item in my_list:
+#     item += 1
+#     print(item)
+# # Output: 10, 20, 30
+
 
