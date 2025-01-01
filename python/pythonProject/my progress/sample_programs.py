@@ -43,16 +43,3 @@
 # random.uniform(1,5)
 # print(random.uniform(1,5))  
 
-import random
-items = ["apple", "banana", "cherry"]
-print(random.choices(items, weights=[1, 2, 3], k=5))  # Example: ['cherry', 'banana', 'cherry', 'apple', 'cherry']
-
-deck = [1, 2, 3, 4, 5]
-random.shuffle(deck)
-print(deck)  # Example: [3, 1, 5, 2, 4]
-
-
-states_of_India = ["Karnataka", "Maharashtra", "Kerala", "Tamil Nadu", "Gujarat", "Rajasthan", "Uttar Pradesh", "Madhya Pradesh", "Bihar", "West Bengal", "Andhra Pradesh", "Telangna", "Odisha", "Assam", "Jharkhand", "Chhattisgarh", "Uttarakhand", "Himachal Pradesh", "Tripura", "Meghalaya", "Manipur", "Nagaland", "Goa", "Arunachal Pradesh", "Mizoram", "Sikkim", "Delhi", "Punjab", "Haryana", "Jammu and Kashmir", "Chandigarh", "Dadra and Nagar Haveli", "Daman and Diu", "Lakshadweep", "Puducherry", "Andaman and Nicobar Islands"]
-random.shuffle(states_of_India)
-print(states_of_India)
-print(random.sample(states_of_India, k=5))  # Example: ['Karnataka', 'Maharashtra', 'Kerala', 'Tamil Nadu', 'Gujarat']
