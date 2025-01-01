@@ -316,3 +316,24 @@ fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
 
+for i in range(5):
+    print(i)
+# Output: 0, 1, 2, 3, 4
+
+for i in range(1, 6, 2):  # Start=1, Stop=6 (exclusive), Step=2
+    print(i)
+# Output: 1, 3, 5
+
+for i in range(5, 0, -1):
+    print(i)
+
+for char in "Python":
+    print(char)
+# Output: P, y, t, h, o, n
+
+
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+# Output: 0, 1, 2, 3, 4
