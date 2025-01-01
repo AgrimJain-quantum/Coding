@@ -311,3 +311,12 @@ import string
 characters = string.ascii_letters + string.digits + string.punctuation
 password = ''.join(random.choices(characters, k=12))
 print(password)  # Example: 'aZ3!bX9@Lm2#'
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+count = 0
+while count < 5:
+    print(count)
+    count += 1
