@@ -43,3 +43,7 @@
 # random.uniform(1,5)
 # print(random.uniform(1,5))  
 
+student_scores = [78, 65, 89, 86, 55, 91, 64, 89]
+for score in student_scores:
+    print(score)
+    
