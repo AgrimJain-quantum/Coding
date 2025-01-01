@@ -297,4 +297,8 @@
 #     print(item)
 # # Output: 10, 20, 30
 
-
+dirty_dozen = ["strawberries", "spinach" , "kale" , "nectarines" , "apples"]
+friuts = ["apples", "oranges", "bananas", "grapes", "mangoes"]
+vegetables = ["spinach", "kale", "carrots", "tomatoes", "potatoes"]
+dirty_dozen.extend(friuts)
+print(dirty_dozen)
