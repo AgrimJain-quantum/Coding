@@ -326,6 +326,9 @@ no_of_students = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
 for student in no_of_students:
     print(student)
 
-for no in range(0, 11 , 3):
-    print(no)
-    
+total = 0
+for no in range(0, 11 ,2):
+    total += no
+print(total)
+
+
