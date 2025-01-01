@@ -304,7 +304,9 @@ friuts = ["apples", "oranges", "bananas", "grapes", "mangoes"]
 vegetables = ["spinach", "kale", "carrots", "tomatoes", "potatoes"]
 dirty_dozen.extend(friuts)
 print(dirty_dozen)
-print(random.randint(1, 6))  # Output: Random number between 1 and 6
+print(random.randint(1, 6))
+# Output: Random number between 1 and 6
+
 import string
 characters = string.ascii_letters + string.digits + string.punctuation
 password = ''.join(random.choices(characters, k=12))
