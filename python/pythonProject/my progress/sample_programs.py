@@ -35,5 +35,10 @@ else:
     print("Tails")
 
 people = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+#option 1
 print(random.choice(people))
-print()
+#option 2
+rndom_index = random.randint(0,4)
+print(people[rndom_index])
+random.uniform(1,5)
+print(random.uniform(1,5))  
