@@ -9,3 +9,13 @@ my_function_with_args("John Doe", "a great day!")
 def sum_two_numbers(a, b):
     return a + b
 print(sum_two_numbers(5, 7))
+
+def print_sum_two_numbers(a, b):
+    print(a + b)
+print_sum_two_numbers(5, 7)
+
+def print_sum_two_numbers(a, b):
+    print(a + b)
+    return a + b
+print(print_sum_two_numbers(5, 7))
+
