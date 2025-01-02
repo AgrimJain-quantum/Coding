@@ -330,13 +330,55 @@
 # #     total += no
 # # print(total)
 
-total = 0
-for number in range(1, 101):
-    total += number
-print(total)
+# total = 0
+# for number in range(1, 101):
+#     total += number
+# print(total)
 
 
-while True:
-    response = input("Type 'exit' to stop: ")
-    if response == "exit":
-        break
+# while True:
+#     response = input("Type 'exit' to stop: ")
+#     if response == "exit":
+#         break
+
+# for i in range(5):
+#     if i == 3:
+#         continue
+#     print(i)
+
+# total = sum(range(1, 6))
+# print(total)
+# # Output: 15 (1 + 2 + 3 + 4 + 5)
+
+# fruits = ["apple", "banana", "cherry"]
+# for i in range(len(fruits)):
+#     print(f"Index {i}: {fruits[i]}")
+# Output:
+# Index 0: apple
+# Index 1: banana
+# Index 2: cherry
+
+# len("hello")
+# n = 5
+# factorial = 1
+# for i in range(1, n + 1):
+#     factorial *= i
+# print("Factorial:", factorial)  # Output: 120
+
+# numbers = [1, 2, 3, 4, 5]
+# search = 3
+# for num in numbers:
+#     if num == search:
+#         print("Found:", num)
+#         break
+
+# def greet():
+#     print("Hello")
+#     print("Good Morning")
+# greet()
+
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Agrim")
+# Output: Hello, Agrim!
