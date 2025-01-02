@@ -335,3 +335,8 @@ for number in range(1, 101):
     total += number
 print(total)
 
+
+while True:
+    response = input("Type 'exit' to stop: ")
+    if response == "exit":
+        break
