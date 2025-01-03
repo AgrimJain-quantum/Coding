@@ -35,5 +35,7 @@ for i in range(5):
 else:
     print("Loop completed")
 
+
+
 # Output: 0, 1, 2, 3, 4
 #         Loop completed
