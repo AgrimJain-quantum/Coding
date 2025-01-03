@@ -29,5 +29,11 @@ def print_sum_two_numbers(a, b):
     return a + b
 print(print_sum_two_numbers(5, 7))
 
-def print_sum_two_numbers(a, b):
-        
+
+for i in range(5):
+    print(i)
+else:
+    print("Loop completed")
+
+# Output: 0, 1, 2, 3, 4
+#         Loop completed
