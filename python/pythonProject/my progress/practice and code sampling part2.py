@@ -43,6 +43,10 @@ def factorial(n):
 print(factorial(5))  # Output: 120
 
 
+def greet(name):
+    print(f"Hello, {name}!")  # Code block for the function
+
+greet("Agrim")
 
 # Output: 0, 1, 2, 3, 4
 #         Loop completed
