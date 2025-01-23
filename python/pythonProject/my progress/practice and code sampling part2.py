@@ -19,28 +19,28 @@
 #     return a + b
 # print(print_sum_two_numbers(5, 7))
 
-# def print_sum_two_numbers(a, b):
-#     return a + b
-#     print(a + b)            
-# print(print_sum_two_numbers(5, 7))
+def print_sum_two_numbers(a, b):
+    return a + b
+    print(a + b)            
+print(print_sum_two_numbers(5, 7))
 
-# def print_sum_two_numbers(a, b):
-#     print(a + b)
-#     return a + b
-# print(print_sum_two_numbers(5, 7))
+def print_sum_two_numbers(a, b):
+    print(a + b)
+    return a + b
+print(print_sum_two_numbers(5, 7))
 
 
-# for i in range(5):
-#     print(i)
-# else:
-#     print("Loop completed")
+for i in range(5):
+    print(i)
+else:
+    print("Loop completed")
 
-# def factorial(n):
-#     if n == 0 or n == 1:
-#         return 1
-#     return n * factorial(n - 1)
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
 
-# print(factorial(5))  # Output: 120
+print(factorial(5))  # Output: 120
 
 def my_fuction():
     print("Hello from a function")
