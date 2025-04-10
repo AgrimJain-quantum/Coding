@@ -8,7 +8,7 @@ from flask import Flask, jsonify, request
 from flask_httpauth import HTTPBasicAuth
 
 # Flask app setup
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='static')
 auth = HTTPBasicAuth()
 
 users = {
@@ -24,6 +24,11 @@ def get_password(username):
 @app.errorhandler(404)
 def not_found(error):
     return jsonify({"error": "Resource not found"}), 404
+
+@app.route('/')
+def index():
+    """Serve the main HTML page"""
+    return app.send_static_file('index.html')
 
 # Energy Data Simulator Class
 class EnergyDataSimulator:

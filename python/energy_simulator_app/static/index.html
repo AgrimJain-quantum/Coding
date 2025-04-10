@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Simulator Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .chart-container { width: 100%; max-width: 800px; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <h1>Energy Simulator Dashboard</h1>
+    
+    <div class="chart-container">
+        <h2>Grid Summary</h2>
+        <canvas id="gridSummaryChart"></canvas>
+    </div>
+    
+    <div class="chart-container">
+        <h2>User Data</h2>
+        <select id="userSelect">
+            <option value="user_001">User 001</option>
+            <option value="user_002">User 002</option>
+        </select>
+        <canvas id="userDataChart"></canvas>
+    </div>
+
+    <script>
+        // Authentication credentials
+        const username = 'admin';
+        const password = 'password123';
+        const authHeader = 'Basic ' + btoa(username + ':' + password);
+
+        // Fetch grid summary data
+        async function fetchGridSummary() {
+            const response = await fetch('/api/energy/summary', {
+                headers: { 'Authorization': authHeader }
+            });
+            return await response.json();
+        }
+        
+        // Fetch user data
+        async function fetchUserData(userId) {
+            const response = await fetch(`/api/energy/user/${userId}`, {
+                headers: { 'Authorization': authHeader }
+            });
+            return await response.json();
+        }
+        
+        // Create grid summary chart
+        async function createGridSummaryChart() {
+            try {
+                const data = await fetchGridSummary();
+                const timestamps = data.map(d => new Date(d.timestamp).toLocaleTimeString());
+                
+                new Chart(document.getElementById('gridSummaryChart'), {
+                    type: 'line',
+                    data: {
+                        labels: timestamps,
+                        datasets: [
+                            {
+                                label: 'Grid Import (kWh)',
+                                data: data.map(d => d.grid_import_kwh),
+                                borderColor: 'red',
+                                fill: false
+                            },
+                            {
+                                label: 'Grid Export (kWh)',
+                                data: data.map(d => d.grid_export_kwh),
+                                borderColor: 'green',
+                                fill: false
+                            }
+                        ]
+                    }
+                });
+            } catch (error) {
+                console.error('Error fetching grid summary:', error);
+            }
+        }
+        
+        // Create user data chart
+        async function createUserDataChart(userId) {
+            try {
+                const data = await fetchUserData(userId);
+                const timestamps = data.map(d => new Date(d.timestamp).toLocaleTimeString());
+                
+                if (window.userChart) {
+                    window.userChart.destroy();
+                }
+                
+                window.userChart = new Chart(document.getElementById('userDataChart'), {
+                    type: 'line',
+                    data: {
+                        labels: timestamps,
+                        datasets: [
+                            {
+                                label: 'Consumption (kWh)',
+                                data: data.map(d => d.consumption_kwh),
+                                borderColor: 'red',
+                                fill: false
+                            },
+                            {
+                                label: 'Production (kWh)',
+                                data: data.map(d => d.production_kwh),
+                                borderColor: 'green',
+                                fill: false
+                            },
+                            {
+                                label: 'Battery Level (kWh)',
+                                data: data.map(d => d.battery_level_kwh),
+                                borderColor: 'blue',
+                                fill: false
+                            }
+                        ]
+                    }
+                });
+            } catch (error) {
+                console.error(`Error fetching user data for ${userId}:`, error);
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createGridSummaryChart();
+            createUserDataChart('user_001');
+            
+            document.getElementById('userSelect').addEventListener('change', (e) => {
+                createUserDataChart(e.target.value);
+            });
+        });
+    </script>
+</body>
+</html>
