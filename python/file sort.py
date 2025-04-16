@@ -164,38 +164,61 @@ def organize_files(source_dir, destination_dir=None, action='move', recursive=Fa
     return True
 
 def main():
-    # Set up command-line argument parsing
-    parser = argparse.ArgumentParser(description="Organize files into hierarchical folders by category and extension.")
-    parser.add_argument("source_dir", help="Directory containing files to organize")
-    parser.add_argument("-d", "--dest", help="Destination directory (default: source_dir/Organized)")
-    parser.add_argument("-a", "--action", choices=["move", "copy"], default="move",
-                        help="Action to perform on files (move or copy)")
-    parser.add_argument("-r", "--recursive", action="store_true", 
-                        help="Process subdirectories recursively")
-    
-    args = parser.parse_args()
-    
-    print(f"\nHierarchical File Organizer")
-    print(f"{'=' * 50}")
-    print(f"Source directory: {args.source_dir}")
-    print(f"Destination: {'<source>/Organized' if args.dest is None else args.dest}")
-    print(f"Action: {args.action} files")
-    print(f"Recursive: {'Yes' if args.recursive else 'No'}")
-    print(f"{'=' * 50}\n")
-    
-    # Confirm before proceeding
-    response = input("Proceed with organization? (y/n): ").strip().lower()
-    if response != 'y':
-        print("Operation cancelled.")
-        return
-    
-    # Call the organize function with arguments
-    organize_files(
-        args.source_dir,
-        args.dest,
-        args.action,
-        args.recursive
-    )
+    # Check if args were provided
+    if len(sys.argv) > 1:
+        # Set up command-line argument parsing
+        parser = argparse.ArgumentParser(description="Organize files into hierarchical folders by category and extension.")
+        parser.add_argument("source_dir", help="Directory containing files to organize")
+        parser.add_argument("-d", "--dest", help="Destination directory (default: source_dir/Organized)")
+        parser.add_argument("-a", "--action", choices=["move", "copy"], default="move",
+                            help="Action to perform on files (move or copy)")
+        parser.add_argument("-r", "--recursive", action="store_true", 
+                            help="Process subdirectories recursively")
+        
+        args = parser.parse_args()
+        
+        print(f"\nHierarchical File Organizer")
+        print(f"{'=' * 50}")
+        print(f"Source directory: {args.source_dir}")
+        print(f"Destination: {'<source>/Organized' if args.dest is None else args.dest}")
+        print(f"Action: {args.action} files")
+        print(f"Recursive: {'Yes' if args.recursive else 'No'}")
+        print(f"{'=' * 50}\n")
+        
+        # Confirm before proceeding
+        response = input("Proceed with organization? (y/n): ").strip().lower()
+        if response != 'y':
+            print("Operation cancelled.")
+            return
+        
+        # Call the organize function with arguments
+        organize_files(
+            args.source_dir,
+            args.dest,
+            args.action,
+            args.recursive
+        )
+    else:
+        # Use current directory when run without arguments
+        current_dir = os.getcwd()
+        print(f"\nHierarchical File Organizer")
+        print(f"{'=' * 50}")
+        print(f"No arguments provided. Using default settings:")
+        print(f"Source directory: {current_dir}")
+        print(f"Destination: {current_dir}/Organized")
+        print(f"Action: move files")
+        print(f"Recursive: No")
+        print(f"{'=' * 50}\n")
+        
+        # Confirm before proceeding
+        response = input("Proceed with organization? (y/n): ").strip().lower()
+        if response != 'y':
+            print("Operation cancelled.")
+            return
+            
+        # Call organize_files with default parameters
+        organize_files(current_dir)
 
 if __name__ == "__main__":
+    import sys  # Add this import at the top
     main()
