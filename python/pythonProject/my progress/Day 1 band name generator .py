@@ -34,3 +34,18 @@ elif bmi < 35:
     print("obese")
 else:
     print("clinically obese")
+
+def fun(a,b):
+    c = a + b
+    return c
+def fun1(a,b):
+    c = a - b
+    return c    
+a = 10
+b = 20
+print(fun(a,b))
+print(fun1(a,b))
+def fun2(a,b):
+    c = a * b
+    return c  
+print(fun2(a,b))
