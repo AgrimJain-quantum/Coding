@@ -2,7 +2,7 @@ word_list = ["a", "abandon", "ability", "able", "abortion", "about", "above", "a
 import random
 chosen_word = random.choice(word_list)
 print(chosen_word)
-placeholder = []
+placeholder = ''
 for letter in chosen_word:
     placeholder.append("_")
 print(placeholder)
