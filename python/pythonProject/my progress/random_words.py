@@ -42,3 +42,32 @@ def is_prime(n):
     return True
 print(is_prime(78), is_prime(79))
 
+# Python program to demonstrate
+# default arguments
+def myFun(x, y=50):
+    print("x: ", x)
+    print("y: ", y)
+# Driver code (We call myFun() with only
+# argument)
+myFun(10)
+
+# Python program to demonstrate Keyword Arguments
+def student(firstname, lastname):
+    print(firstname, lastname)
+
+
+# Keyword arguments
+student(firstname='Geeks', lastname='Practice')
+student(lastname='Practice', firstname='Geeks')
+
+def nameAge(name, age):
+    print("Hi, I am", name)
+    print("My age is ", age)
+# You will get correct output because 
+# argument is given in order
+print("Case-1:")
+nameAge("Suraj", 27)
+# You will get incorrect output because
+# argument is not in order
+print("\nCase-2:")
+nameAge(27, "Suraj")
