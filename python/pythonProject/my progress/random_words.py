@@ -72,3 +72,14 @@ nameAge("Suraj", 27)
 print("\nCase-2:")
 nameAge(27, "Suraj")
 
+def calculate_love_score(name1, name2):
+    combined_names = (name1 + name2).lower()
+    
+    true_count = sum(combined_names.count(letter) for letter in "true")
+    love_count = sum(combined_names.count(letter) for letter in "love")
+    
+    love_score = int(f"{true_count}{love_count}")
+    print(love_score)
+
+
+
