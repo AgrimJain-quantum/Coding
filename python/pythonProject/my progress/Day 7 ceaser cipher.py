@@ -40,3 +40,10 @@ new_number = interger + float
 print(new_number)
 print(type(new_number))
 
+def f1():
+    a = 1
+    def f2():
+        print(a)
+    f2()
+f1()
+
