@@ -9,7 +9,7 @@ import pandas as pd
 # --------------------
 # CONFIGURATION
 # --------------------
-API_KEY = 'YOUR_API_KEY'  # Replace with your OpenWeatherMap API key
+API_KEY = '1310cc9029637831bbb879313d029008'  # Replace with your OpenWeatherMap API key
 LAT, LON = '26.9124', '75.7873'
 SEASON = 'Summer'
 SIM_HOURS = 24
