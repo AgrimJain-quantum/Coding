@@ -43,3 +43,4 @@ nested_list = [
     [4, 5, 6],
     [7, 8, 9]
 ]
+print(nested_list[1])  # Output: 2
