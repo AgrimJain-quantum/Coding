@@ -33,3 +33,10 @@ print("hello" [1])
 print("hello" [0])
 print("hello" [2])  
 print("hello" [3])
+
+interger = 123
+float = 1.23
+new_number = interger + float
+print(new_number)
+print(type(new_number))
+
