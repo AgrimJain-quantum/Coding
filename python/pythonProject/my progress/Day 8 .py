@@ -21,3 +21,19 @@ y = car.keys()
 print(y) #after the change
 z = car.values()
 print(z) #after the change
+s = car.items()
+print(s) #after the change
+
+travel_log = {
+    "france" : [
+        {
+            "cities_visited" : ["paris", "lille", "lyon"],
+            "total_visits" : 12
+        },
+        {
+            "cities_visited" : ["paris", "lille", "lyon"],
+            "total_visits" : 12
+        }
+    ]
+}
+print(travel_log["france"][0]["cities_visited"])
