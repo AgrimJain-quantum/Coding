@@ -19,3 +19,5 @@ print(x) #after the change
 
 y = car.keys()
 print(y) #after the change
+z = car.values()
+print(z) #after the change
