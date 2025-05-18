@@ -171,3 +171,6 @@ plt.savefig("enhanced_energy_simulation.png")
 plt.show()
 
 print("✅ Simulation complete. Graph saved as 'enhanced_energy_simulation.png'")
+
+
+
