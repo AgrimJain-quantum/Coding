@@ -49,3 +49,9 @@ car["year"] = 2020
 print(car)
 car.update({"model" : "maruti"})
 print(car)
+
+nested_list_dictionary = {
+    "list1" : [1, 3, 4],
+    "list2" : { "list3" : [1, 2, 3], "list4" : [4, 5, 6] }
+}
+print(nested_list_dictionary["list2"]["list4"][1])  # Output: 5
