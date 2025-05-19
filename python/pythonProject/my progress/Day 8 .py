@@ -56,3 +56,7 @@ nested_list_dictionary = {
 }
 print(nested_list_dictionary["list2"]["list4"][1])  # Output: 5
 print(nested_list_dictionary["list1"][2])
+car.update({"model" : "porshe"})
+print(car)  # Output: None
+car.update({"year" : 2025})
+print(car)  # Output: None
