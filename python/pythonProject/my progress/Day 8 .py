@@ -55,3 +55,4 @@ nested_list_dictionary = {
     "list2" : { "list3" : [1, 2, 3], "list4" : [4, 5, 6] }
 }
 print(nested_list_dictionary["list2"]["list4"][1])  # Output: 5
+print(nested_list_dictionary["list1"][2])
