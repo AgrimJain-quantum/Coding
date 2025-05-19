@@ -7,11 +7,11 @@
 # this_list = dict( name = "agrim" , age = 20, country = "india")
 # print(this_list)
 
-# car = {
-# "brand": "Ford",
-# "model": "Mustang",
-# "year": 1964
-# }
+car = {
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
+}
 # x = car.keys()
 # print(x) #before the change
 # car["color"] = "white"
@@ -44,3 +44,8 @@ nested_list = [
     [7, 8, 9]
 ]
 print(nested_list[1])  # Output: 2
+print(nested_list[0][2])  # Output: 6
+car["year"] = 2020
+print(car)
+car.update({"model" : "maruti"})
+print(car)
