@@ -73,3 +73,7 @@
 my_list = [1,2,3,4,5]
 my_list.pop(2)
 print(my_list)
+my_list.pop(0)
+print(my_list)
+my_list.pop
+print(my_list)
