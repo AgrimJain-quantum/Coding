@@ -77,3 +77,6 @@ my_list.pop(0)
 print(my_list)
 my_list.pop
 print(my_list)
+
+print(my_list[-1])
+
