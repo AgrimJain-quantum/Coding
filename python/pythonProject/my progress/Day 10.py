@@ -70,15 +70,26 @@
 #     return 3 * 2
 # print(my_function())
 
-my_list = [1,2,3,4,5]
-my_list.pop(2)
-print(my_list)
-my_list.pop(0)
-print(my_list)
-my_list.pop
-print(my_list)
+# my_list = [1,2,3,4,5]
+# my_list.pop(2)
+# print(my_list)
+# my_list.pop(0)
+# print(my_list)
+# my_list.pop
+# print(my_list)
 
-print(my_list[-1])
+# print(my_list[-1])
 
-list = ["agrim" , "jain" , "20" , "28 ", "june" , "2005"]
-print(list[2:6]     )
+# list = ["agrim" , "jain" , "20" , "28 ", "june" , "2005"]
+# print(list[2:6]     )
+# def my_function(f_name , last_name):
+#     name_1 = f_name.title()
+#     name_2 = last_name.title()
+#     return f"hello {name_1} {name_2}"
+# print(my_function("agrim" , "jain"))
+def function_1(text):
+    return text + text
+def function_2(text):
+    return text.title()
+output  = function_2(function_1("agrim"))
+print(output)
