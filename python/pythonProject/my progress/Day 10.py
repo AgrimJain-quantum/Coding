@@ -80,3 +80,5 @@ print(my_list)
 
 print(my_list[-1])
 
+list = ["agrim" , "jain" , "20" , "28 ", "june" , "2005"]
+print(list[2:6]     )
