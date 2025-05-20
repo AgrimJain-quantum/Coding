@@ -65,3 +65,7 @@ returnq.popitem()
 print(returnq)  
 returnq.pop("name")
 print(returnq)
+\
+def my_function():
+    return 3 * 2
+print(my_function())
