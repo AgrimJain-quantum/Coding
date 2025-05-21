@@ -17,3 +17,9 @@ print(my_function.__doc__)
 print("Using help:")
 help(my_function)
 
+'''black jack game'''
+
+import random
+
+cards = {11,2,3,4,5,6,7,8,9,10,10,10,10} 
+
