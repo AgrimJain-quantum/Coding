@@ -47,5 +47,6 @@ print(fun(a,b))
 print(fun1(a,b))
 def fun2(a,b):
     c = a * b
+    
     return c  
 print(fun2(a,b))
