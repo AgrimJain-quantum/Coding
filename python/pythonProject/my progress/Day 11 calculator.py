@@ -7,53 +7,53 @@
 # print(format("agrim", "jain"))
 
 
-def format_name(f_name, l_name):
- if f_name == "" or l_name == "":
-    return "you didn't provide valid inputs"
- formated_f_name = f_name.title()
- formated_l_name = l_name.title()
- return f"hi! {formated_f_name} {formated_l_name}"
-print(format_name(input("first name: "), input("last name: ")))
+# def format_name(f_name, l_name):
+#  if f_name == "" or l_name == "":
+#     return "you didn't provide valid inputs"
+#  formated_f_name = f_name.title()
+#  formated_l_name = l_name.title()
+#  return f"hi! {formated_f_name} {formated_l_name}"
+# print(format_name(input("first name: "), input("last name: ")))
 
-# returning function
-def add(a, b):
-    # returning sum of a and b
-    return a + b
+# # returning function
+# def add(a, b):
+#     # returning sum of a and b
+#     return a + b
 
-def is_true(a):
-    # returning boolean of a
-    return bool(a)
-# calling function
-res = add(2, 3)
-print(res)
-res = is_true(2<5)
-print(res) 
+# def is_true(a):
+#     # returning boolean of a
+#     return bool(a)
+# # calling function
+# res = add(2, 3)
+# print(res)
+# res = is_true(2<5)
+# print(res) 
 
-# returning multiple values
-def fun():
-    name = "Alice"
-    age = 30
-    return name, age
+# # returning multiple values
+# def fun():
+#     name = "Alice"
+#     age = 30
+#     return name, age
 
-name, age = fun()
-print(name)  
-print(age)   # Output: 30
+# name, age = fun()
+# print(name)  
+# print(age)   # Output: 30
 
-# returning multiple values in a list
-def fun_multiply(a, b):
-    return [a * b, (a + b)*(a * b) ]
-res = fun_multiply(2, 3)
-print(res)  # Output: [6, 30]
+# # returning multiple values in a list
+# def fun_multiply(a, b):
+#     return [a * b, (a + b)*(a * b) ]
+# res = fun_multiply(2, 3)
+# print(res)  # Output: [6, 30]
 
-# returning multiple values in a dictionary
-def fun_1():
-    def fun_2():
-        def fun_3():
-            return "hello"
-        return fun_3()
-    return fun_2()
-res = fun_1()
-print(res)  # Output: hello
+# # returning multiple values in a dictionary
+# def fun_1():
+#     def fun_2():
+#         def fun_3():
+#             return "hello"
+#         return fun_3()
+#     return fun_2()
+# res = fun_1()
+# print(res)  # Output: hello
 
 
 # new_name = format_name("agrim", "jain")
@@ -77,5 +77,70 @@ def multiply (n1 , n2):
     return n1 * n2
 def divide(n1 , n2):
     return n1 / n2 
-
-
+def calculator():
+    art = r"""                                   ...::::....                                           
+                    .=++***********************************************++++=:                     
+                  +*#############*###**********#*******************************=                  
+                 +***=----====++==+++=====+++=+++++++++++=++++=++=========-=+#*+=                 
+                 +**.      -   =   .    . .   .         : . : .      .   :   -*+=                 
+                .+**       -   =   : .                  . . : -      :   :   :*+-                 
+                .+#*               -          .             : .              .*+-                 
+                .*#*               -   .                    : : -            .*+-                 
+                .*#*      . :      =   .                    . : -   . .       *+-                 
+                .*%*         -:  --      .-   -.      ::  .:  .:       :      ##=                 
+                .#@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%%%%#################%%*.                
+                :#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*.                
+                .*####################################**************************=.                
+                :***************+++++++###********##****************************+:                
+                -***=::::::::::::::::::*+ -.. ..       .=*=-+=:=--**+........:**+=                
+                -***=::::::::::::::::::**=-:==-=---:-===+*==+---=-**+.. ... ..**++                
+                =*##################*#*******************************=-:::::-=**++                
+                +*##########################************************************++                
+                +*##**-=.=:=*####* +:=++**##*+::  .:-*****=:.=.:*****+.:=.:-:+**++                
+                ***#*++. : -*####* .-==+**###+...:.--+*##*=-:.-***#*#+ =  =:=+***+                
+                ****#%%%%%%%%####%%%%%%%%####%%%%%%%%##*#%%%%%%%%#***%%%%%%%##***+                
+                **************###**************************##*##*****************+.               
+                ****:        :*#-        .+#+         =*#****.+***#***+= .+******+:               
+                ****:        :*#-        .+#+         =##***+ =***#*##++..=+*****+-               
+                ****:        -*#-        .+#+         =###%%%%%%%#***#%%%%%%%#***+=               
+                **##=--------+##*=========*#*=--------*#*****##*#****************++               
+                **#*=--=====-+##+---====-=*#*=--------+*#***-. =*****#++---+*****++               
+                **#*.        -*#:        .+#+         =###**:..-*****%*++-::+****++               
+                **#+.        -*#:        .+#+         -**#%%%%#####**#%%#######**+=               
+               .***+.        =*#:        .+#+         -**************************+=               
+               :**#*-::::::::+##+::::::::-*#*=-::::---+****++=++***#***+=-::-+***+=               
+               :****+++++++++*##+=========*#*+++++++==**##*********#*%*+: +*******=.              
+               -**#-         +##.        .+#+.        :**#@@%%%%@@#**#%@%%%%%%#***=:              
+               =*##-         +##.        .+#+.        :******#********************=-              
+               +*##:         +##.        .+#+.        :+***********#**#+++++******==              
+               +*##+=======+=###++++++++++*##+===++++++*#**+*******#*#+++++*******==              
+               **##=:::::::::*#*=::::::::-**+-::::::..=*##*++- +***#*#*++----+****==              
+               **##:         +##          +#+         :*##*=.   :****#*+=   .-****==              
+               **##:         +##         .+#+         .+##*+++.+*****##++++++*****=-              
+               **##:         *##          +#+.        .+*#*++++*******%+++++******+-              
+               **##-.........*##:........:+#*:........:+*#%#**####%#**#%**********=-              
+               ++*##################################*****************************+::              
+                *%%####################*#####***********************************+-=               
+                 .*####%%%%%%%%%%%%%%%%%#####################%%%%%%%%%%%%%%###%#+:                
+                         .:-==++++++******###############*****++++====-.          """
+    print(art)
+    print("welcome to th calculator")
+    print("please select operation")
+    print("1. add")
+    print("2. subtract")
+    print("3. multiply")
+    print("4. divide")
+    operation = input("please select operation: ")
+    n1 = float(input("please enter first number: "))
+    n2 = float(input("please enter second number: "))
+    if operation == "1":
+        print(add(n1 , n2))
+    elif operation == "2":
+        print(subtract(n1 , n2))
+    elif operation == "3":
+        print(multiply(n1 , n2))
+    elif operation == "4":
+        print(divide(n1 , n2))
+    else:
+        print("invalid operation")
+calculator()
