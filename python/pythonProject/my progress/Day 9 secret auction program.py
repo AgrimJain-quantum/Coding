@@ -1,3 +1,5 @@
+""" secret auction program """
+
 name = input("what is your name ?")
 price = int(input("place your bid : "))
 bids = {}
