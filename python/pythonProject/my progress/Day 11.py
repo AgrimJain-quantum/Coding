@@ -15,10 +15,11 @@ def format_name(f_name, l_name):
  return f"hi! {formated_f_name} {formated_l_name}"
 print(format_name(input("first name: "), input("last name: ")))
 
-
+# returning function
 def add(a, b):
     # returning sum of a and b
     return a + b
+
 def is_true(a):
     # returning boolean of a
     return bool(a)
@@ -28,6 +29,31 @@ print(res)
 res = is_true(2<5)
 print(res) 
 
+# returning multiple values
+def fun():
+    name = "Alice"
+    age = 30
+    return name, age
+
+name, age = fun()
+print(name)  
+print(age)   # Output: 30
+
+# returning multiple values in a list
+def fun_multiply(a, b):
+    return [a * b, (a + b)*(a * b) ]
+res = fun_multiply(2, 3)
+print(res)  # Output: [6, 30]
+
+# returning multiple values in a dictionary
+def fun_1():
+    def fun_2():
+        def fun_3():
+            return "hello"
+        return fun_3()
+    return fun_2()
+res = fun_1()
+print(res)  # Output: hello
 
 
 
