@@ -7,11 +7,6 @@
 # print(format("agrim", "jain"))
 
 
-
-
-
-
-
 def format_name(f_name, l_name):
  if f_name == "" or l_name == "":
     return "you didn't provide valid inputs"
@@ -20,22 +15,18 @@ def format_name(f_name, l_name):
  return f"hi! {formated_f_name} {formated_l_name}"
 print(format_name(input("first name: "), input("last name: ")))
 
-# def add(a, b):
 
-#     # returning sum of a and b
-#     return a + b
-
-# def is_true(a):
-
-#     # returning boolean of a
-#     return bool(a)
-
-# # calling function
-# res = add(2, 3)
-# print(res)
-
-# res = is_true(2<5)
-# print(res)
+def add(a, b):
+    # returning sum of a and b
+    return a + b
+def is_true(a):
+    # returning boolean of a
+    return bool(a)
+# calling function
+res = add(2, 3)
+print(res)
+res = is_true(2<5)
+print(res) 
 
 
 
