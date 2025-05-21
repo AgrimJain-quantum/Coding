@@ -1,69 +1,134 @@
-# def format(f_name, l_name):
-#  print(f_name.title())
-#  print(l_name.title())
-#  formatted_f_name  = f_name.title()
-#  formattted_l_name = l_name.title()
-#  print(f" hi! {formatted_f_name} {formattted_l_name}")
-# print(format("agrim", "jain"))
+# # thisdict = {
+# #     "brand" : "aston martin",
+# #     "model" : "db11",
+# #     "year" : 2020,
+# # }
+# # thisdict.pop("model")
+# # print(thisdict)
+# # thisdict.popitem()
+# # print(thisdict)
+# # del(thisdict["brand"])
+# # print(thisdict)
+# # this = {
+# #     "brand" : "aston martin",
+# #     "model" : "db11",
+# #     "year" : 2020,
+# #     "color" : "red",
+# #     "engine" : "v8",
+# #     "horsepower" : 503,
+# #     "torque" : 498,
+# #     "weight" : 3855,
+# #     "top_speed" : 208,
+# # }
+# # this.copy()
+# # thisdict = {
+# #     "brand" : "aston martin",
+# #     "model" : "db11",
+# #     "year" : 2020,
+# # }
+# # thisdict.clear()
+# # print(thisdict)
+# # this.items()
+# # print(this)
+# # this.fromkeys(thisdict)
+# # print(this)
+# # car = {
+# #     "brand" : "aston martin",
+# #     "model" : "db11",
+# #     "year" : 2020,
+# #     "color" : "red",
+# # }
+# # mydict = car.copy()
+# # print(mydict)
+# # qwerty = {
+# #     "brand" : "aston martin",
+# #     "model" : "db11",
+# #     "year" : 2020,
+# #     "color" : "red",
+# #     "engine" : ["v8", "v12"],
+# #     "horsepower" : 503,
+# #     "weight" : 3855,
+# #     "top_speed" : 208,
+# #     "acceleration" : 0.0,
+# #     "braking" : 0.0,
+# #     "handling" : 0.0,
+# #     "comfort" : 0.0,
+# # }
+# # qwerty.fromkeys("engine")
+# # print(qwerty)
+# # returnq = {
+# #     "name" : "agrim ",
+# #     "second_name" : "jain",
+# #     "age" : 20,
+# # }
+# # returnq.popitem()
+# # print(returnq)  
+# # returnq.pop("name")
+# # print(returnq)
+# # \
+# # def my_function():
+# #     return 3 * 2
+# # print(my_function())
 
+# # my_list = [1,2,3,4,5]
+# # my_list.pop(2)
+# # print(my_list)
+# # my_list.pop(0)
+# # print(my_list)
+# # my_list.pop
+# # print(my_list)
 
+# # print(my_list[-1])
+
+# # list = ["agrim" , "jain" , "20" , "28 ", "june" , "2005"]
+# # print(list[2:6]     )
+# # def my_function(f_name , last_name):
+# #     name_1 = f_name.title()
+# #     name_2 = last_name.title()
+# #     return f"hello {name_1} {name_2}"
+# # print(my_function("agrim" , "jain"))
+# # def function_1(text):
+# #     return text + text
+# # def function_2(text):
+# #     return text.title()
+# # output  = function_2(function_1("agrim"))
+# # print(output)
+
+# #Functions with Outputs
 # def format_name(f_name, l_name):
-#  if f_name == "" or l_name == "":
-#     return "you didn't provide valid inputs"
-#  formated_f_name = f_name.title()
-#  formated_l_name = l_name.title()
-#  return f"hi! {formated_f_name} {formated_l_name}"
-# print(format_name(input("first name: "), input("last name: ")))
+#   if f_name == "" or l_name == "":
+#     return "You didn't provide valid inputs."
+#   formated_f_name = f_name.title()
+#   formated_l_name = l_name.title()
+#   f"Result: {formated_f_name} {formated_l_name}"
 
-# # returning function
-# def add(a, b):
-#     # returning sum of a and b
-#     return a + b
+# #Storing output in a variable
+# formatted_name = format_name(input("Your first name: "), input("Your last name: "))
+# print(formatted_name)
+# #or printing output directly
+# print(format_name(input("What is your first name? "), input("What is your last name? ")))
 
-# def is_true(a):
-#     # returning boolean of a
-#     return bool(a)
-# # calling function
-# res = add(2, 3)
-# print(res)
-# res = is_true(2<5)
-# print(res) 
+# #Already used functions with outputs.
+# length = len(formatted_name)
 
-# # returning multiple values
-# def fun():
-#     name = "Alice"
-#     age = 30
-#     return name, age
-
-# name, age = fun()
-# print(name)  
-# print(age)   # Output: 30
-
-# # returning multiple values in a list
-# def fun_multiply(a, b):
-#     return [a * b, (a + b)*(a * b) ]
-# res = fun_multiply(2, 3)
-# print(res)  # Output: [6, 30]
-
-# # returning multiple values in a dictionary
-# def fun_1():
-#     def fun_2():
-#         def fun_3():
-#             return "hello"
-#         return fun_3()
-#     return fun_2()
-# res = fun_1()
-# print(res)  # Output: hello
+# #Return as an early exit
+# def format_name(f_name, l_name):
+#   """Take a first and last name and format it 
+#   to return the title case version of the name."""
+#   if f_name == "" or l_name == "":
+#     return "You didn't provide valid inputs."
+#   formated_f_name = f_name.title()
+#   formated_l_name = l_name.title()
+#   return f"Result: {formated_f_name} {formated_l_name}"
 
 
-# new_name = format_name("agrim", "jain")
-# print(new_name)
-# def function_1(text):
-#  return text + text
-# def function_2(text):
-#  return text.title()
-# output = function_2(function_1("agrim"))
-# print(output)
+def function_1(text):
+    return text + text
+def funtion_2(text):
+    return text.title()
+print(function_1("agrim"))
+print(funtion_2("agrim"))
+
 
 
 
