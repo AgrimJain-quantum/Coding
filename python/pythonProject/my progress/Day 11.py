@@ -13,28 +13,29 @@
 
 
 def format_name(f_name, l_name):
-#  if f_name == "" or l_name == "":
+ if f_name == "" or l_name == "":
+    return "you didn't provide valid inputs"
  formated_f_name = f_name.title()
  formated_l_name = l_name.title()
  return f"hi! {formated_f_name} {formated_l_name}"
-print(format_name(str(input("enter your first name ? :  ")), str(input("enter your last name ? :   "))))
+print(format_name(input("first name: "), input("last name: ")))
 
-def add(a, b):
+# def add(a, b):
 
-    # returning sum of a and b
-    return a + b
+#     # returning sum of a and b
+#     return a + b
 
-def is_true(a):
+# def is_true(a):
 
-    # returning boolean of a
-    return bool(a)
+#     # returning boolean of a
+#     return bool(a)
 
-# calling function
-res = add(2, 3)
-print(res)
+# # calling function
+# res = add(2, 3)
+# print(res)
 
-res = is_true(2<5)
-print(res)
+# res = is_true(2<5)
+# print(res)
 
 
 
