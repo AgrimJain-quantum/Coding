@@ -56,15 +56,6 @@ res = fun_1()
 print(res)  # Output: hello
 
 
-
-
-
-
-
-
-
-
-
 # new_name = format_name("agrim", "jain")
 # print(new_name)
 # def function_1(text):
@@ -73,3 +64,16 @@ print(res)  # Output: hello
 #  return text.title()
 # output = function_2(function_1("agrim"))
 # print(output)
+
+
+
+""" code of calculator """
+
+def add(n1 , n2):
+    return n1 + n2
+def subtract(n1 , n2):
+    return n1 - n2
+ 
+
+
+ 
