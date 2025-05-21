@@ -35,6 +35,12 @@ elif bmi < 35:
 else:
     print("clinically obese")
 
+
+
+"""take a first name and last name and return a string with the first letter of the first name and the last name in
+uppercase and the rest of the name in lowercase.
+for example, if the first name id "john" and the last name is "doe", then the function should return "John Doe". 
+"""
 def fun(a,b):
     c = a + b
     return c
@@ -50,3 +56,4 @@ def fun2(a,b):
     
     return c  
 print(fun2(a,b))
+
