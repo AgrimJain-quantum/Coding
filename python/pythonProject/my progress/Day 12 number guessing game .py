@@ -39,5 +39,40 @@ def outer_funtion():
     inner_funtion()
 outer_funtion()
 
+def qw_1():
+    s = "hello"
+    print(s)
+s = "world"
+qw_1()
+print(s)
+
+count = 5
+def some_method():
+    global count
+    count = count + 1
+    print(count)
+
+def outer():
+    def inner():
+        var = 10
+        print(var)
+    inner()
+    print(var)
+
+count = 5
+def some_method():
+    global count
+    count = count + 1
+    print(count)
+some_method()
 
 
+
+def some_func():
+    def some_inner_func():
+        var = 10
+        print("Inside inner function:", var)
+    some_inner_func()
+    print("Outside inner function:", var)
+    
+some_func()
