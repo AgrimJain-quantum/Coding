@@ -77,4 +77,3 @@ while input("Do you want to play a game of blackjack? Type 'y' or 'n': ") == "y"
     play_game()
 
 
-
