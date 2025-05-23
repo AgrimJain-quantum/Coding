@@ -195,8 +195,10 @@ HARD_ATTEMPS = 5
 def check_answer(user_guess, actual_answer):
     if user_guess > actual_answer:
         print("Too high")
+        
     elif user_guess < actual_answer:
         print("Too low")
+        
     else:
         print(f"you got it right! the answer is {actual_answer}.")
 
@@ -207,13 +209,25 @@ def check_difficulty():
     else:
         return HARD_ATTEMPS
 
-print("Welcome to the number guessing game!")
-print("I'm thinking of a nu,ber between 1 and 100.")
-print("choose a difficullty level either 'easy' or 'hard'")
-answer = randint(1,100)
-turns = check_difficulty()
-print(f"you have {turns} attempts to guess the number.")
-guess = int(input("guess a number : "))
+def game():
+    print("Welcome to the number guessing game!")
+    print("I'm thinking of a number between 1 and 100.")
+    print("choose a difficullty level either 'easy' or 'hard'")
+    answer = randint(1,100)
+    turns = check_difficulty()
+    print(f"you have {turns} attempts to guess the number.")
+    guess = int(input("guess a number : "))
+    check_answer(guess, answer)
+    while guess != answer:
+        turns = check_answer(guess, answer)
+        if turns == 0:
+            print("you have run out of attempts")
+            return
+        print(f"you have {turns} attempts remaining to guess the number.")
+        guess = int(input("guess a number : ")) 
+
+game()
+
 
 
 
