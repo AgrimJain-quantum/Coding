@@ -68,19 +68,33 @@
 
 
 
-def some_func():
-    def some_inner_func():
-        vars = 10
-        print("Inside inner function:", vars)
-    some_inner_func()
-    print("Outside inner function:", vars)
-    
-some_func()
+# def some_func():
+#     def some_inner_func():
+#         vars = 10
+#         print("Inside inner function:", vars)
+#     some_inner_func()
+#     print("Outside inner function:", vars)
+# some_func()
 
-count = 5
-def some_method():
-    global count
-    count = count + 1
-    print(count)
-some_method()
+# count = 5
+# def some_method():
+#     global count
+#     count = count + 1
+#     print(count)
+# some_method()
+
+
+
+'''python local variable'''
+def f():
+    s = "hello"
+    print(s)
+f()
+
+
+'''python global variable'''
+q = "agrim"
+def qw():
+    print(q)
+qw()
 
