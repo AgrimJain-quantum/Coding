@@ -142,3 +142,4 @@ def outer():
     inner()
     print("outer: ", x)
 outer()
+
