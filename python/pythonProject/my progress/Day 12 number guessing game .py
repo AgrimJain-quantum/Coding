@@ -109,8 +109,17 @@
 
 
 #     # global scope
-player_health = 10
-def drink_potion():
-    potion_strength = 2
-    print(player_health)
-drink_potion()
+# player_health = 10
+# def drink_potion():
+#     potion_strength = 2
+#     print(player_health)
+# drink_potion()
+
+level = 3
+enemies = ["skeleton", "zombie", "mummy"]
+
+def create_enemy():
+    new_enemy = ""
+    if level < 5:
+        new_enemy = enemies[0]
+    print(new_enemy)
