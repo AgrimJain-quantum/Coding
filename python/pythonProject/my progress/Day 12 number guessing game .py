@@ -132,14 +132,22 @@
 # print(x)
 
 
-"""non local keyword"""
-def outer():
-    x = 10
-    def inner():
-        nonlocal x
-        x = 20
-        print("inner:" , x)
-    inner()
-    print("outer: ", x)
-outer()
+# """non local keyword"""
+# def outer():
+#     x = 10
+#     def inner():
+#         nonlocal x
+#         x = 20
+#         print("inner:" , x)
+#     inner()
+#     print("outer: ", x)
+# outer()
 
+PI = 3.14
+GRAVITY = 9.8
+def calculate_area(radius):
+    return PI * radius * radius
+print(calculate_area(5))
+def something():
+    return PI * GRAVITY
+print(something())
