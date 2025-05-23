@@ -182,4 +182,40 @@
 
 """ guess the number game """
 
+# todo
+# choosing A random number between 1 and 100
+# funtion to check the difficulty
+# let the user guess the number 
+# function to check the guess
+# track the number of guesses and remaining attempts
+# repeat the guessing functionality if they get it wrong
+from random import randint
+EASY_ATTEMPTS = 10
+HARD_ATTEMPS = 5
+def check_answer(user_guess, actual_answer):
+    if user_guess > actual_answer:
+        print("Too high")
+    elif user_guess < actual_answer:
+        print("Too low")
+    else:
+        print(f"you got it right! the answer is {actual_answer}.")
+
+def check_difficulty():
+    level   = input("choose a difficluty level either 'easy' or 'hard'")
+    if level == "easy":
+        return EASY_ATTEMPTS
+    else:
+        return HARD_ATTEMPS
+
+print("Welcome to the number guessing game!")
+print("I'm thinking of a nu,ber between 1 and 100.")
+print("choose a difficullty level either 'easy' or 'hard'")
+answer = randint(1,100)
+turns = check_difficulty()
+print(f"you have {turns} attempts to guess the number.")
+guess = int(input("guess a number : "))
+
+
+
+
 
