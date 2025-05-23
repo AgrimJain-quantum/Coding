@@ -125,8 +125,20 @@
 #     print(new_enemy)
 
 # x = 10 
-def func():
-    global x
-    x = 20
-func()
-print(x)
+# def func():
+#     global x
+#     x = 20
+# func()
+# print(x)
+
+
+"""non local keyword"""
+def outer():
+    x = 10
+    def inner():
+        nonlocal x
+        x = 20
+        print("inner:" , x)
+    inner()
+    print("outer: ", x)
+outer()
