@@ -115,11 +115,18 @@
 #     print(player_health)
 # drink_potion()
 
-level = 3
-enemies = ["skeleton", "zombie", "mummy"]
+# level = 3
+# enemies = ["skeleton", "zombie", "mummy"]
 
-def create_enemy():
-    new_enemy = ""
-    if level < 5:
-        new_enemy = enemies[0]
-    print(new_enemy)
+# def create_enemy():
+#     new_enemy = ""
+#     if level < 5:
+#         new_enemy = enemies[0]
+#     print(new_enemy)
+
+# x = 10 
+def func():
+    global x
+    x = 20
+func()
+print(x)
