@@ -85,16 +85,32 @@
 
 
 
-'''python local variable'''
-def f():
-    s = "hello"
-    print(s)
-f()
+# '''python local variable'''
+# def f():
+#     s = "hello"
+#     print(s)
+# f()
+
+# '''python global variable'''
+# q = "agrim"
+# def qw():
+#     print(q)
+# qw()
+
+# ''' python nopnlocal variable'''
+# def outer():
+#     x = "local"
+#     def inner():
+#         nonlocal x
+#         x = "nonlocal"
+#         print("inner:", x)
+#     inner()
+#     print("outer:", x)
 
 
-'''python global variable'''
-q = "agrim"
-def qw():
-    print(q)
-qw()
-
+#     # global scope
+player_health = 10
+def drink_potion():
+    potion_strength = 2
+    print(player_health)
+drink_potion()
