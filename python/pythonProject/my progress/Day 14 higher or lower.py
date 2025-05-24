@@ -10,4 +10,9 @@
 #  score keeping
 # make the game repeatable
 # making account at position b become the next account at position a 
+import random
+from art import logo, vs
+from game_data import data
+print(logo)
+
 
