@@ -14,5 +14,8 @@ import random
 from art import logo, vs
 from game_data import data
 print(logo)
-
-
+def format_data(account):
+    account_name = account["name"]
+    account_desc = account["description"]
+    account_country = account["country"]
+    return f"{account_name} , a {account_desc} , from {account_country}"
