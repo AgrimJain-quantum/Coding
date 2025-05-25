@@ -32,9 +32,9 @@ resources = {
 
 
 
-def is_resource_sufficient(drink):
-    for item in drink["ingredients"]:
-        if drink["ingredients"][item] > resources[item]:
+def is_resource_sufficient(ordered_ingredients):
+    for item in ordered_ingredients: 
+        if ordered_ingredients[item] >= resources[item]:
             print(f"Sorry there is not enough {item}.")
             return False
     return True
