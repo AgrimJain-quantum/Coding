@@ -43,14 +43,34 @@ def is_resource_sufficient(ordered_ingredients):
 def process_money():
     print("Please insert money.")
     total = 0.0
-    
+    ones = int(input("how many 1-ruppee coins? : "))
+    total += ones * 1.0
+    twos = int(input("how many 2-ruppee coins? : "))
+    total += twos * 2.0
+    fives = int(input("how many 5-ruppee coins? : "))
+    total += fives * 5.0    
+    tens = int(input("how many 10-ruppee coins? : "))
+    total += tens * 10.0
+    twenties = int(input("how many 20-ruppee coins? : "))
+    total += twenties * 20.0
+    return total
+        
+def is_transaction_successful(money_recevied, drink_cost):
+    if money_recevied >= drink_cost:
+        change = round(money_recevied - drink_cost, 2)
+        print(f"Here is ${change} in change.")
+        global profit
+        profit += drink_cost
+        return True
+    else:
+        print("Sorry that's not enough money. Money refunded.")
+        return False
 
-
-
-
-
-
-
+def make_coffee(drink_name, ordered_ingredients):
+    """detuct the ingreedinetds from the resources"""
+    for item in ordered_ingredients:
+        resources[item] -= ordered_ingredients[item]
+    print(f"Here is your {drink_name} ☕️. Enjoy!")
 
 
 is_on = True
@@ -67,3 +87,9 @@ while is_on:
     else:
         drink = MENU[choice]
         if is_resource_sufficient(drink["ingredients"]):
+            payment = process_money()
+            if is_transaction_successful( payment, drink["cost"]):
+                make_coffee(choice, drink["ingredients"])
+
+
+
