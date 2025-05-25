@@ -37,3 +37,8 @@ while is_on:
         print("Turning off the machine.")
         is_on = False
     elif choice == "report":
+        print(f"water : {resources['water']}ml")
+        print(f"milk : {resources['milk']}ml")       
+        print(f"coffee : {resources['coffee']}g" )
+        print(f"profit : ${profit}")
+        
