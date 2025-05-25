@@ -23,8 +23,17 @@ MENU = {
         "cost" : 3.0,           
     },
 }
+profit = 0.0
 resources = {
     "water": 300,
     "milk": 300,
     "coffee": 300,
 }
+
+is_on = True
+while is_on:
+    choice = input("What would you like to have? (espresso/latte/cappuccino): ")
+    if choice == "off":
+        print("Turning off the machine.")
+        is_on = False
+    elif choice == "report":
