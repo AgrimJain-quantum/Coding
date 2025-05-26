@@ -14,10 +14,9 @@
 
 from turtle import Turtle , Screen
 my_screen = Screen()
-timmy= Turtle()
-# print(my_screen.canvheight)
-print(timmy)
+timmy = Turtle()
+print(my_screen.canvheight)
 timmy.shape("turtle")
 timmy.color("red")
-
-
+print(timmy)
+my_screen.exitonclick()
