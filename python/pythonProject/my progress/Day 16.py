@@ -12,3 +12,6 @@ def draw_dashed_line(length, dash_length):
         timmy.forward(dash_length)
         timmy.pendown()
 
+from turtle import Turtle
+timmy_1 = Turtle()
+
