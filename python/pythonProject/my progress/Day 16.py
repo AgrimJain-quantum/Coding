@@ -18,4 +18,6 @@ timmy= Turtle()
 # print(my_screen.canvheight)
 print(timmy)
 timmy.shape("turtle")
-my_screen.exitonclicK()
+timmy.color("red")
+
+
