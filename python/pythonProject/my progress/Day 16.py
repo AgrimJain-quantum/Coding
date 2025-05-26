@@ -18,6 +18,7 @@ timmy = Turtle()
 print(my_screen.canvheight)
 timmy.shape("turtle")
 timmy.color("DarkMagenta")
+timmy.forward(100)
 print(timmy)
 my_screen.exitonclick()
 
