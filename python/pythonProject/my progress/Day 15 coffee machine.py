@@ -98,3 +98,22 @@ while is_on:
             payment = process_money()
             if is_transaction_successful( payment, drink["cost"]):
                 make_coffee(choice, drink["ingredients"])
+
+
+
+
+class CoffeeMachine:
+    def init(self):
+        self.resources = {
+            "water" : 300,
+            "milk" : 300,
+            "coffee": 300
+        }
+    def report(self):
+        print(f"water : {self.resources['water']}ml")
+        print(f"milk : {self.resources['milk']}ml")       
+        print(f"coffee : {self.resources['coffee']}g" )
+        print(f"profit : ${profit}")
+    def is_resource_sufficient(self, ordered_ingredients):
+        is_enough = True
+        
