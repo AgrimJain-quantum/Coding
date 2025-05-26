@@ -17,4 +17,7 @@ my_screen = Screen()
 timmy= Turtle()
 print(my_screen.canvheight) 
 print(timmy)
+
+timmy.shape("turtle")
+
 my_screen.exitonclick()
