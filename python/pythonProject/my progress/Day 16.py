@@ -68,3 +68,6 @@ table.add_row(["Alice", 30, "New York"])
 table.add_row(["Bob", 25, "Los Angeles"])
 table.add_row(["Charlie", 35, "Chicago"])
 print(table)
+
+table.align = "l"  # Left align the columns
+print(table)
