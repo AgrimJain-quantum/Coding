@@ -27,21 +27,21 @@
 #     self.y = y
 # def __str__(self):
 #     return f"Point({self.x}, {self.y})"
-class Dog:
-    species = "Canine"  # Class attribute
+# class Dog:
+#     species = "Canine"  # Class attribute
 
-    def __init__(self, name, age, breed):
-        self.name = name  # Instance attribute
-        self.age = age  
-        self.breed = breed 
+#     def __init__(self, name, age, breed):
+#         self.name = name  # Instance attribute
+#         self.age = age  
+#         self.breed = breed 
 
-# Creating an object of the Dog class
-dog1 = Dog("Buddy", 3, "Golden Retriever")
+# # Creating an object of the Dog class
+# dog1 = Dog("Buddy", 3, "Golden Retriever")
 
-print(dog1.name)  # Output: Buddy
-print(dog1.species)  # Output: Canine
-print(dog1.age)  # Output: 3
-print(dog1.breed)
+# print(dog1.name)  # Output: Buddy
+# print(dog1.species)  # Output: Canine
+# print(dog1.age)  # Output: 3
+# print(dog1.breed)
 
 class Person:
     def __init__(self , name, age, weight, height):
@@ -49,3 +49,10 @@ class Person:
         self.age = age
         self.weight = weight
         self.height = height
+        
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+    
+person1 = Person("Alice", 30, 65, 170)
+person1.greet()  # Output: Hello, my name is Alice and I am 30 years old.
+
