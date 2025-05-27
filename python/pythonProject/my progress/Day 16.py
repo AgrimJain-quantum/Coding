@@ -39,3 +39,4 @@ dog1 = Dog("Buddy", 3)
 
 print(dog1.name)  # Output: Buddy
 print(dog1.species)  # Output: Canine
+print(dog1.age)  # Output: 3
