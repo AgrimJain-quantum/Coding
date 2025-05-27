@@ -43,20 +43,28 @@
 # print(dog1.age)  # Output: 3
 # print(dog1.breed)
 
-class Person:
-    def __init__(self , name, age, weight, height):
-        self.name = name
-        self.age = age
-        self.weight = weight
-        self.height = height
+# class Person:
+#     def __init__(self , name, age, weight, height):
+#         self.name = name
+#         self.age = age
+#         self.weight = weight
+#         self.height = height
         
-    def greet(self):
-        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+#     def greet(self):
+#         print(f"Hello, my name is {self.name} and I am {self.age} years old.")
     
-person1 = Person("Alice", 30, 65, 170)
-person1.greet()  # Output: Hello, my name is Alice and I am 30 years old.
+# person1 = Person("Alice", 30, 65, 170)
+# person1.greet()  # Output: Hello, my name is Alice and I am 30 years old.
 
-class Dog:
-    sound = "Woof"
-dog1 = Dog()
-print(dog1.sound)
+# class Dog:
+#     sound = "Woof"
+# dog1 = Dog()
+# print(dog1.sound)
+
+import prettytable
+table = prettytable.PrettyTable()
+table.field_names = ["Name", "Age", "City"]
+table.add_row(["Alice", 30, "New York"])        
+table.add_row(["Bob", 25, "Los Angeles"])
+table.add_row(["Charlie", 35, "Chicago"])
+print(table)
