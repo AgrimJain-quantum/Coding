@@ -67,7 +67,19 @@ table.field_names = ["Name", "Age", "City"]
 table.add_row(["Alice", 30, "New York"])        
 table.add_row(["Bob", 25, "Los Angeles"])
 table.add_row(["Charlie", 35, "Chicago"])
-print(table)
+# print(table)
 
-table.align = "l"  # Left align the columns
-print(table)
+# table.align = "l"  # Left align the columns
+# print(table)
+# table.sortby = "Age"  # Sort by the "Age" column
+# print(table)
+# table.reversesort = True  # Reverse the sort order
+# print(table)
+# table.clear_rows()
+# print(table)  # This will print an empty table since all rows are cleared
+table.align = "c"  # Center align the columns
+print(table)  # This will print the table with centered columns
+table.border = False  # Disable the border
+print(table)  # This will print the table without borders\
+table.align["age"] = "l"  # Left align the "Age" column
+print(table)  # This will print the table with the "Age" column left aligned
