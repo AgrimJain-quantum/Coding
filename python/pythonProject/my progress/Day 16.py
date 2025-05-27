@@ -42,3 +42,10 @@ print(dog1.name)  # Output: Buddy
 print(dog1.species)  # Output: Canine
 print(dog1.age)  # Output: 3
 print(dog1.breed)
+
+class Person:
+    def __init__(self , name, age, weight, height):
+        self.name = name
+        self.age = age
+        self.weight = weight
+        self.height = height
