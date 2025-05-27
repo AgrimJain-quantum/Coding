@@ -30,13 +30,15 @@
 class Dog:
     species = "Canine"  # Class attribute
 
-    def __init__(self, name, age):
+    def __init__(self, name, age, breed):
         self.name = name  # Instance attribute
-        self.age = age  # Instance attribute
+        self.age = age  
+        self.breed = breed 
 
 # Creating an object of the Dog class
-dog1 = Dog("Buddy", 3)
+dog1 = Dog("Buddy", 3, "Golden Retriever")
 
 print(dog1.name)  # Output: Buddy
 print(dog1.species)  # Output: Canine
 print(dog1.age)  # Output: 3
+print(dog1.breed)
