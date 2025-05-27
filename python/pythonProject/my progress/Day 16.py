@@ -56,3 +56,7 @@ class Person:
 person1 = Person("Alice", 30, 65, 170)
 person1.greet()  # Output: Hello, my name is Alice and I am 30 years old.
 
+class Dog:
+    sound = "Woof"
+dog1 = Dog()
+print(dog1.sound)
