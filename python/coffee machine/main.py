@@ -17,5 +17,11 @@ while is_on:
         money_machine.report()
     else:
         drink = menu.find_drink(choice)
-        print(drink)
-        
+        if coffee_maker.is_resource_sufficient(drink):
+            if money_machine.make_payment(drink.cost):
+                coffee_maker.make_coffee(drink)
+            else:
+                print("payment failed, please try again.")
+        else:
+            print("Sorry, not enough resources to make that drink.")
+             
