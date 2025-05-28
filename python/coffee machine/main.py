@@ -24,4 +24,5 @@ while is_on:
                 print("payment failed, please try again.")
         else:
             print("Sorry, not enough resources to make that drink.")
-             
+            
+            
