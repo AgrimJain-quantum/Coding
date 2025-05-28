@@ -77,9 +77,11 @@ table.add_row(["Charlie", 35, "Chicago"])
 # print(table)
 # table.clear_rows()
 # print(table)  # This will print an empty table since all rows are cleared
-table.align = "c"  # Center align the columns
-print(table)  # This will print the table with centered columns
-table.border = False  # Disable the border
-print(table)  # This will print the table without borders\
-table.align["age"] = "l"  # Left align the "Age" column
-print(table)  # This will print the table with the "Age" column left aligned
+# table.align = "c"  # Center align the columns
+# print(table)  # This will print the table with centered columns
+# table.border = False  # Disable the border
+# print(table)  # This will print the table without borders\
+# table.align["age"] = "l"  # Left align the "Age" column
+# print(table)  # This will print the table with the "Age" column left aligned
+# table._bottom_junction_char = "-"  # Change the bottom junction character to a hyphen
+# print(table)  # This will print the table with the modified bottom junction character
