@@ -37,9 +37,34 @@ class user:
     pass
 
 user_1 = user()
+user_1.name = "agrim"
+user_1.age = 20
+user_1.weight = 70
+user_2 = user()
+user_2.name = "jain"
+user_2.age = 21
+user_2.weight = 75
+print(user_1.name)  # Output: agrim``
 
 # def function():
 #     pass
 
 # print("hello")
 # user_1.funtion = function
+
+# AgrimJain = pascal case
+# agrim_jain = snake case
+# agrimJain = camel case
+# class car:
+#     def __init__(self, model, color, year):
+#         self.model = model
+#         self.color = color
+#         self.year = year
+#     def start(self):
+#         print(f"The {self.color} {self.model} is starting.")
+#     def stop(self):
+#         print(f"The {self.color} {self.model} is stopping.")
+# car1 = car("Toyota", "red", 2020)
+# car2 = car("Honda", "blue", 2021)
+# car1.start()  # Output: The red Toyota is starting.
+# car2.stop()   # Output: The blue Honda is stopping.
