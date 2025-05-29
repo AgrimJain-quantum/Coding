@@ -28,3 +28,7 @@ class Person:
 name1 = Person("Alice", 30, 65)
 name2 = Person("Bob", 25, 70)
 table = prettytable.PrettyTable()
+table.field_names = ["Name", "Age", "Weight"]   
+table.add_row([name1.name, name1.age, name1.weight])
+table.add_row([name2.name, name2.age, name2.weight])
+print(table)
