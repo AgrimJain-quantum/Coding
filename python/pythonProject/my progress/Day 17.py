@@ -33,3 +33,10 @@ table.add_row([name1.name, name1.age, name1.weight])
 table.add_row([name2.name, name2.age, name2.weight])
 print(table)
 
+class user:
+
+
+user_1 = user()
+def function():
+    print("hello")
+user_1.funtion = function
