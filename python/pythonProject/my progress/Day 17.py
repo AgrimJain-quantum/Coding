@@ -34,9 +34,12 @@ table.add_row([name2.name, name2.age, name2.weight])
 print(table)
 
 class user:
-
+    pass
 
 user_1 = user()
-def function():
-    print("hello")
-user_1.funtion = function
+
+# def function():
+#     pass
+
+# print("hello")
+# user_1.funtion = function
