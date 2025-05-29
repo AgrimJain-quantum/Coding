@@ -32,3 +32,4 @@ table.field_names = ["Name", "Age", "Weight"]
 table.add_row([name1.name, name1.age, name1.weight])
 table.add_row([name2.name, name2.age, name2.weight])
 print(table)
+
