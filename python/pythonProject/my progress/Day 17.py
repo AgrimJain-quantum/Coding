@@ -78,3 +78,8 @@ car_1 = Car("Toyota", "red", 2020)
 car_2 = Car("Honda", "blue", 2021)
 print(car_1.model)  # Output: Toyota
 print(car_1.color)  # Output: red   
+print(car_1.year)   # Output: 2020
+print(car_2.model)  # Output: Honda
+print(car_2.color)  # Output: blue
+print(car_2.year)   # Output: 2021
+# car_1.model = "Ford"
