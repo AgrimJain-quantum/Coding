@@ -70,7 +70,7 @@
 # car2.stop()   # Output: The blue Honda is stopping.
 
 # 
-
+'''usser class with pretty table library'''
 import prettytable
 table = prettytable.PrettyTable()
 class User:
@@ -93,3 +93,6 @@ table.field_names = ["Name", "Age", "Followers"]
 table.add_row([user_1.id, user_1.age, user_1.followers])
 table.add_row([user_2.id, user_2.age, user_2.followers])
 print(table)
+
+
+'''next '''
