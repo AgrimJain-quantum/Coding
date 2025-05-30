@@ -78,14 +78,24 @@ class Car:
         self.year = year
 car_1 = Car("Toyota", "red", 2020)
 car_2 = Car("Honda", "blue", 2021)
-print(car_1.model)  # Output: Toyota
-print(car_1.color)  # Output: red   
-print(car_1.year)   # Output: 2020
-print(car_2.model)  # Output: Honda
-print(car_2.color)  # Output: blue
-print(car_2.year)   # Output: 2021
+# print(car_1.model)  # Output: Toyota
+# print(car_1.color)  # Output: red   
+# print(car_1.year)   # Output: 2020
+# print(car_2.model)  # Output: Honda
+# print(car_2.color)  # Output: blue
+# print(car_2.year)   # Output: 2021
 table.fieldnames = ["Model", "Color", "Year"]
 table.add_row([car_1.model, car_1.color, car_1.year])
 table.add_row([car_2.model, car_2.color, car_2.year])
 print(table)
 # car_1.model = "Ford"
+class User:
+    def __init__(self, name, age):
+        self.id = name
+        self.age = age
+user_1 = User("Alice" , 30)
+print(user_1.id)  # Output: Alice
+user_2 = User("Bob" , 25)
+print(user_2.id)  # Output: Bob
+
+    
