@@ -73,26 +73,48 @@
 '''usser class with pretty table library'''
 import prettytable
 table = prettytable.PrettyTable()
-class User:
-    def __init__(self, name, age, followers):
-        self.id = name
-        self.age = age
-        self.followers = 0
+# class User:
+#     def __init__(self, name, age, followers):
+#         self.id = name
+#         self.age = age
+#         self.followers = 0
 
-user_1 = User("Alice" , 30, 0)
-user_2 = User("Bob" , 25, 0)
-print(user_1.id)  # Output: Alice
-print(user_2.id)  # Output: Bob
-print(user_1.age)  # Output: 30
-print(user_2.age)  # Output: 25
-user_1.followers += 1
-user_2.followers += 1
-print(user_1.followers)  # Output: 1
-print(user_2.followers)  # Output: 1
-table.field_names = ["Name", "Age", "Followers"]
-table.add_row([user_1.id, user_1.age, user_1.followers])
-table.add_row([user_2.id, user_2.age, user_2.followers])
-print(table)
+# user_1 = User("Alice" , 30, 0)
+# user_2 = User("Bob" , 25, 0)
+# print(user_1.id)  # Output: Alice
+# print(user_2.id)  # Output: Bob
+# print(user_1.age)  # Output: 30
+# print(user_2.age)  # Output: 25
+# user_1.followers += 1
+# user_2.followers += 1
+# print(user_1.followers)  # Output: 1
+# print(user_2.followers)  # Output: 1
+# table.field_names = ["Name", "Age", "Followers"]
+# table.add_row([user_1.id, user_1.age, user_1.followers])
+# table.add_row([user_2.id, user_2.age, user_2.followers])
+# print(table)
 
 
 '''next '''
+class User:
+
+    def __init__(self, username, age, followers):
+        self.username = username
+        self.age = age
+        self.followers = 0
+        self.following = 0
+    def follow(self, user):
+        user.followers += 1
+        self.following += 1
+        user.followers += 1
+    def __str__(self):
+        return f"Username: {self.username}, Age: {self.age}, Followers: {self.followers}, Following: {self.following}"
+user_1 = User("Alice", 30, 0)
+user_2 = User("Bob", 25, 0)
+user_1.follow(user_2)
+print(user_1)  # Output: Username: Alice, Age: 30, Followers: 0, Following: 1
+print(user_2)  # Output: Username: Bob, Age: 25, Followers: 1, Following: 0
+table.field_names = ["Username", "Age", "Followers", "Following"]
+table.add_row([user_1.username, user_1.age, user_1.followers, user_1.following])
+table.add_row([user_2.username, user_2.age, user_2.followers, user_2.following])
+print(table)
