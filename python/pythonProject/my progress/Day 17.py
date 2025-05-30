@@ -93,9 +93,9 @@ class User:
     def __init__(self, name, age):
         self.id = name
         self.age = age
-user_1 = User("Alice" , 30)
-print(user_1.id)  # Output: Alice
-user_2 = User("Bob" , 25)
-print(user_2.id)  # Output: Bob
+        self.followers = 0
+
+user_1 = User("Alice" , 30, 0)
+user_2 = User("Bob" , 25, 0)
 
     
