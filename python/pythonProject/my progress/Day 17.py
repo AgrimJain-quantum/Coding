@@ -69,33 +69,27 @@
 # car1.start()  # Output: The red Toyota is starting.
 # car2.stop()   # Output: The blue Honda is stopping.
 
+# 
+
 import prettytable
 table = prettytable.PrettyTable()
-class Car:
-    def __init__(self, model, color, year):
-        self.model = model
-        self.color = color
-        self.year = year
-car_1 = Car("Toyota", "red", 2020)
-car_2 = Car("Honda", "blue", 2021)
-# print(car_1.model)  # Output: Toyota
-# print(car_1.color)  # Output: red   
-# print(car_1.year)   # Output: 2020
-# print(car_2.model)  # Output: Honda
-# print(car_2.color)  # Output: blue
-# print(car_2.year)   # Output: 2021
-table.fieldnames = ["Model", "Color", "Year"]
-table.add_row([car_1.model, car_1.color, car_1.year])
-table.add_row([car_2.model, car_2.color, car_2.year])
-print(table)
-# car_1.model = "Ford"
 class User:
-    def __init__(self, name, age):
+    def __init__(self, name, age, followers):
         self.id = name
         self.age = age
         self.followers = 0
 
 user_1 = User("Alice" , 30, 0)
 user_2 = User("Bob" , 25, 0)
-
-    
+print(user_1.id)  # Output: Alice
+print(user_2.id)  # Output: Bob
+print(user_1.age)  # Output: 30
+print(user_2.age)  # Output: 25
+user_1.followers += 1
+user_2.followers += 1
+print(user_1.followers)  # Output: 1
+print(user_2.followers)  # Output: 1
+table.field_names = ["Name", "Age", "Followers"]
+table.add_row([user_1.id, user_1.age, user_1.followers])
+table.add_row([user_2.id, user_2.age, user_2.followers])
+print(table)
