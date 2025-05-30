@@ -69,6 +69,8 @@
 # car1.start()  # Output: The red Toyota is starting.
 # car2.stop()   # Output: The blue Honda is stopping.
 
+import prettytable
+table = prettytable.PrettyTable()
 class Car:
     def __init__(self, model, color, year):
         self.model = model
@@ -82,4 +84,8 @@ print(car_1.year)   # Output: 2020
 print(car_2.model)  # Output: Honda
 print(car_2.color)  # Output: blue
 print(car_2.year)   # Output: 2021
+table.fieldnames = ["Model", "Color", "Year"]
+table.add_row([car_1.model, car_1.color, car_1.year])
+table.add_row([car_2.model, car_2.color, car_2.year])
+print(table)
 # car_1.model = "Ford"
