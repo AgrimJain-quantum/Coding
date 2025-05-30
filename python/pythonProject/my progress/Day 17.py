@@ -118,3 +118,4 @@ table.field_names = ["Username", "Age", "Followers", "Following"]
 table.add_row([user_1.username, user_1.age, user_1.followers, user_1.following])
 table.add_row([user_2.username, user_2.age, user_2.followers, user_2.following])
 print(table)
+
