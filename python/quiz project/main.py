@@ -8,5 +8,7 @@ for question in question_data:
     new_question = Question(question_text, question_answer)
     question_bank.append(new_question)
 
-
-print(question_bank[0].answer)
+# todo
+# asking the questions
+# checking if the answer was correct
+# CHECKING IF WE WERE AT THE END OF THE QUIZ
