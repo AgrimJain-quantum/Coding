@@ -1,6 +1,7 @@
 class Quizbrain:
     def __init__(self, question_list):
         self.question_number = 0
+        self.score = 0
         self.q_list = question_list
     
     def still_has_questions(self):
@@ -20,3 +21,4 @@ class Quizbrain:
         print(f"the correct answer was: {correct_answer}")
         print(f"Your current score is: {self.question_number}/[len(self.q_list)]")
         print("\n")
+x``
