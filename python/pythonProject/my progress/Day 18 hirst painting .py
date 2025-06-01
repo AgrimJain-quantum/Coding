@@ -48,7 +48,6 @@
 #     draw_shape(shape_side_n)
 # screen = t.Screen()
 # screen.exitonclick()
-#Challenge 4 - Random Walk
 # timm = t.Turtle()
 # t.colormode(255) 
 
@@ -67,7 +66,7 @@
 
 #     timm.color(random_color())
 #     timm.forward(30)
-# #     timm.setheading(random.choice(directions))
+#     timm.setheading(random.choice(directions))
 
 # # challenge 5 - Spirograph
 # import turtle as t
@@ -92,4 +91,10 @@
 
 # draw_spirograph(5)
   
-  
+# #  hirst painting
+# screen = t.Screen()
+# screen.exitonclick()
+
+import colorgram 
+
+colorgram.extract('image.jpg', 30)
