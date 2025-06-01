@@ -50,9 +50,21 @@ import random
 # screen.exitonclick()
 #Challenge 4 - Random Walk
 timm = t.Turtle()
-colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+t.colormode(255) 
+
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    random_color = (r, g, b)
+    return random_color
+
+
 directions = [0, 90, 180, 270]
-for _ in range(200):
-    timm.color(random.choice(colours))
+timm.pensize(15)
+timm.speed("fastest")
+for _ in range(1000):
+
+    timm.color(random_color())
     timm.forward(30)
     timm.setheading(random.choice(directions))
