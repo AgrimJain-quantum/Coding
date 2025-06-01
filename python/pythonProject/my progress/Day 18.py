@@ -52,5 +52,7 @@ import random
 timm = t.Turtle()
 colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
 directions = [0, 90, 180, 270]
-timm.fd(30)
-timm.setheading(random.choice(directions))
+for _ in range(200):
+    timm.color(random.choice(colours))
+    timm.forward(30)
+    timm.setheading(random.choice(directions))
