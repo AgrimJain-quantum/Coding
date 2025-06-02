@@ -13,14 +13,9 @@ screen.bgcolor("black")
 screen.title("Snake Game")
 screen.tracer(0)  # Turn off the screen updates for smoother animation
 starting_position = [(0, 0), (-20, 0), (-40, 0)]
-segments = []
 
-for position in starting_position:
-    segment = Turtle("square")
-    segment.color("white")
-    segment.penup()
-    segment.goto(position)
-    segments.append(segment)
+
+
 
 game_is_on = True
 while game_is_on:
