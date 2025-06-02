@@ -6,36 +6,35 @@
 # detect the collision with the wall
 # detect the colision with the tail
 from turtle import Turtle, Screen
+import time
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Snake Game")
-
-
+screen.tracer(0)  # Turn off the screen updates for smoother animation
 starting_position = [(0, 0), (-20, 0), (-40, 0)]
-
+segments = []
 
 for position in starting_position:
     segment = Turtle("square")
     segment.color("white")
     segment.penup()
     segment.goto(position)
-    segment.speed("fastest")
-    segment.stamp()  # Stamp the turtle to leave a mark
-    segment.hideturtle()  # Hide the turtle after stamping
-# segment_1 = Turtle("square")
-# segment_1.color("white")
-# segment_1.goto(0, 0)
-# segment_2 = Turtle("square")
-# segment_2.color("white")
-# segment_2.goto(-20, 0)
-# segment_3 = Turtle("square")
-# segment_3.color("white")
-# segment_3.goto(-40, 0)
-# segment_1.speed("fastest")
-# segment_1.penup()
-# segment_2.penup()
-# segment_3.penup()
+    segments.append(segment)
+
+game_is_on = True
+while game_is_on:
+    time.sleep(0.1)  # Control the speed of the snake
+    for segment in segments:
+        segment.forward(20)
+        screen.update()  
+    
+
+
+
+
+
+
 
 
 
