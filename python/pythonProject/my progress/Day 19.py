@@ -7,9 +7,16 @@ def move_forwards():
 def move_backwards():
     tim.backward(10)
 def turn_left():
-    tim.left(10)   
+    new_heading = tim.heading() + 10
+    tim.setheading(new_heading)  
 def turn_right():
-    tim.right(10)
+    new_heading = tim.heading() - 10
+    tim.setheading(new_heading)
+def clear():
+    tim.clear()
+    tim.penup()
+    tim.home()
+    tim.pendown()
 screen.listen()
 screen.onkey(move_forwards, "w")
 screen.onkey(move_backwards, "s")
