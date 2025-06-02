@@ -11,10 +11,31 @@ screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Snake Game")
 
-segment_1 = Turtle("square")
-segment_1.color("white")
+
+starting_position = [(0, 0), (-20, 0), (-40, 0)]
 
 
+for position in starting_position:
+    segment = Turtle("square")
+    segment.color("white")
+    segment.penup()
+    segment.goto(position)
+    segment.speed("fastest")
+    segment.stamp()  # Stamp the turtle to leave a mark
+    segment.hideturtle()  # Hide the turtle after stamping
+# segment_1 = Turtle("square")
+# segment_1.color("white")
+# segment_1.goto(0, 0)
+# segment_2 = Turtle("square")
+# segment_2.color("white")
+# segment_2.goto(-20, 0)
+# segment_3 = Turtle("square")
+# segment_3.color("white")
+# segment_3.goto(-40, 0)
+# segment_1.speed("fastest")
+# segment_1.penup()
+# segment_2.penup()
+# segment_3.penup()
 
 
 
