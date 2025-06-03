@@ -5,10 +5,12 @@
 # create a score board
 # detect the collision with the wall
 # detect the colision with the tail
-from turtle import Turtle, Screen
-from snake import Snake  # Assuming you have a snake.py file with the Snake class
+from turtle import Screen
+from snake import Snake  
+from food import Food
 import time
 snake = Snake() 
+food = Food()  # Create an instance of the Food class
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
