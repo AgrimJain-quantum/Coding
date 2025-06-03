@@ -30,11 +30,13 @@ while game_is_on:
     snake.move()
     # Check for collision with food
     if snake.head.distance(food) < 15:  # Assuming food is a Turtle object
-        food.refresh()  # Move food to a new random position
+        food.refresh()
+        scoreboard.increase_score()# Move food to a new random position
         new_segment = Turtle("square")
         new_segment.color("white")
         new_segment.penup()
-        snake.segments.append(new_segment)  # Add a new segment to the snake
+        snake.segments.append(new_segment) 
+        # Add a new segment to the snake
 
 screen.exitonclick()
  
