@@ -25,11 +25,15 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.head.forward(20)
     def up(self):
-        self.head.setheading(UP)    
+        if self.head.heading() != DOWN:
+            self.head.setheading(UP)    
     def down(self):
-        self.head.setheading(DOWN) 
+        if self.head.heading() != UP:
+            self.head.setheading(DOWN) 
     def left(self):
-        self.head.setheading(LEFT)  
+        if self.head.heading() != RIGHT:
+            self.head.setheading(LEFT)  
     def right(self):
-        self.head.setheading(RIGHT) 
+        if self.head.heading() != LEFT:
+            self.head.setheading(RIGHT) 
     
