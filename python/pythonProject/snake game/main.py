@@ -1,7 +1,4 @@
-# detect collision with food
-# create a score board
-# detect the collision with the wall
-# detect the colision with the tail
+# Snake Game
 from turtle import *
 from snake import Snake  
 from food import Food
@@ -46,22 +43,3 @@ while game_is_on:
             scoreboard.game_over()
 screen.exitonclick()   
     
-     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-
- 
