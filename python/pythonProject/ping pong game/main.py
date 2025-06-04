@@ -9,13 +9,22 @@ detect collision with the wall and bounce
 detect when paddle misses the ball
 keep the score
 '''
-from turtle import Screen
+from turtle import Screen, Turtle
 screen = Screen()
 screen.bgcolor("black")
 screen.setup(width = 800, height= 600)
-screen.title("Ping Pong Game")  
+screen.title("Pong Game")  
+
+paddle = Turtle()
+paddle.shape("square")
+paddle.color("white")
+paddle.shapesize(stretch_wid=5, stretch_len=1)
+paddle.penup()
+paddle.goto(350,0)
 
 
-
+screen.listen()
+screen.onkey(go_up(), "Up")
+screen.onkey(go_down(), "Down")
 
 screen.exitonclick()
