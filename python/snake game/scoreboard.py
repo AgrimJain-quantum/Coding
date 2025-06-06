@@ -15,7 +15,7 @@ class Scoreboard (Turtle):
         
     def update_scoreboard(self):
         self.clear()
-        self.write(f"Score: {self.score}", align = ALIGN, font = FONT)
+        self.write(f"Score: {self.score} High Score : {self.highscore}", align = ALIGN, font = FONT)
     
     def reset(self):
         if self.score > self.highscore:
