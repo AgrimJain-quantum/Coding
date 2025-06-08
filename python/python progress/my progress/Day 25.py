@@ -36,3 +36,5 @@ data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\m
 print(type(data["temp"]))
 print(data["temp"].mean())
 print(data["temp"].max())
+x = data["day"]
+print(x)
