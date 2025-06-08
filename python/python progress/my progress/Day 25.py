@@ -11,7 +11,17 @@
 #             temperature.append(int(row[1]))
 #     print(temperature)
 
-import pandas as pd
-data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
-print(data)
+# import pandas as pd
+# data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
+# print(type(data["temp"]))
+# print(data["temp"].mean())
 
+import pandas as pd
+a = [1, 7, 2]
+myvar = pd.Series(a)
+print(myvar)
+print(myvar[0])
+print(myvar[1])
+print(myvar[2])
+print(myvar[1:3])
+print(myvar[1:])  # Slicing from index 1 to the end
