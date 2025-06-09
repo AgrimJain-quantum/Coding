@@ -96,4 +96,4 @@ data_dict_2 = {
     "grades": ["A+", "A", "B+"]
 }
 details = pd.DataFrame(data_dict_2) 
-print(details)
+details.to_csv("details.csv")
