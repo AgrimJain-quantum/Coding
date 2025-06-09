@@ -103,4 +103,3 @@ data  = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\2018_Central_Par
 data["Primary Fur Color"] == "Gray"
 gray_squirrels = data[data["Primary Fur Color"] == "Gray"]
 print(f"Number of gray squirrels: {len(gray_squirrels)}")
-red_squirrels = data[data["Primary Fur Color"] == "Cinnamon"]
