@@ -107,3 +107,9 @@ black_squirrels_count = len(data[data["Primary Fur Color"] == "Black"])
 print(f"Number of gray squirrels: {grey_squirrels_count}")
 print(f"Number of red squirrels: {red_squirrels_count}")    
 print(f"Number of black squirrels: {black_squirrels_count}")
+
+data_dict = {
+    "Fur Color": ["Gray", "Red", "Black"],
+    "Count": [grey_squirrels_count, red_squirrels_count, black_squirrels_count],
+}
+print(data_dict)
