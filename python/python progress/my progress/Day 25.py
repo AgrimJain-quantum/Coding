@@ -68,23 +68,32 @@
 # print(x)
 import pandas as pd
 data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
-data_dict = data.to_dict()
-temp_list = data["temp"].to_list()
-length = len(temp_list)
-mean = data["temp"].mean()
-max = data["temp"].max()
-print(f"all the detailes of the given data is:  {data_dict}")
-print(f"the list of all the temperature is: {temp_list}")
-print(f"the length of the temperature list is: {length}")
-print(f"the mean of the temperature is: {mean}")
-print(f"the maximum temperature is: {max}")
-print(data["condition"])
-print(data.condition)
-print(data[data.day == "Monday"])
+# data_dict = data.to_dict()
+# temp_list = data["temp"].to_list()
+# length = len(temp_list)
+# mean = data["temp"].mean()
+# max = data["temp"].max()
+# print(f"all the detailes of the given data is:  {data_dict}")
+# print(f"the list of all the temperature is: {temp_list}")
+# print(f"the length of the temperature list is: {length}")
+# print(f"the mean of the temperature is: {mean}")
+# print(f"the maximum temperature is: {max}")
+# print(data["condition"])
+# print(data.condition)
+# print(data[data.day == "Monday"])
 
-print(data[data.temp == data.temp.max()])
-print(data[data.temp == data.temp.min()])
-print(data[data.day == "Monday"])
+# print(data[data.temp == data.temp.max()])
+# print(data[data.temp == data.temp.min()])
+# print(data[data.day == "Monday"])
 monday = data[data.day == "Monday"]
-print(monday.condition)
+monday_temp = monday.temp[0]
+monday_temp_f = monday_temp * 9/5 + 32
+print(f"Monday's temperature in Fahrenheit is: {monday_temp_f}")
 
+data_dict_2 = {
+    "names": ["Agrim", "Aarav", "Aarvi"],
+    "scores": [100, 90, 80],
+    "grades": ["A+", "A", "B+"]
+}
+details = pd.DataFrame(data_dict_2) 
+print(details)
