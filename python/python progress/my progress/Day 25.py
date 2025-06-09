@@ -40,20 +40,20 @@
 # # # print(x)
 
 
-# # import pandas as pd
-# # months_days = {    "January": 31,
-# #     "February": 28,
-# #     "March": 31,
-# #     "April": 30,
-# #     "May": 31,
-# #     "June": 30,
-# #     "July": 31,
-# #     "August": 31,
-# #     "September": 30,
-# #     "October": 31,
-# #     "November": 30,
-# #     "December": 31
-# #     }
+# import pandas as pd
+# months_days = {    "January": 31,
+#     "February": 28,
+#     "March": 31,
+#     "April": 30,
+#     "May": 31,
+#     "June": 30,
+#     "July": 31,
+#     "August": 31,
+#     "September": 30,
+#     "October": 31,
+#     "November": 30,
+#     "December": 31
+    }
 
 # # var = pd.Series(months_days)
 # # print(var)
@@ -97,3 +97,9 @@ data_dict_2 = {
 }
 details = pd.DataFrame(data_dict_2) 
 details.to_csv("details.csv")
+
+
+months_days = {    "January": 31,
+"February": 28,
+"March": 31,
+"April": 30,}
