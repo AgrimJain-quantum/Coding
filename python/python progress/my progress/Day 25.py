@@ -1,68 +1,84 @@
-# # # # # # with open (r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv", "r") as file:
-# # # # # #     data = file.readlines()
-# # # # # #     print(data)
+# # # # # # # with open (r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv", "r") as file:
+# # # # # # #     data = file.readlines()
+# # # # # # #     print(data)
 
-# # # # # import csv
-# # # # # with open(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv", "r") as file:
-# # # # #     data = csv.reader(file)
-# # # # #     temperature = []
-# # # # #     for row in data:
-# # # # #         if row[1] != "temp":
-# # # # #             temperature.append(int(row[1]))
-# # # # #     print(temperature)
+# # # # # # import csv
+# # # # # # with open(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv", "r") as file:
+# # # # # #     data = csv.reader(file)
+# # # # # #     temperature = []
+# # # # # #     for row in data:
+# # # # # #         if row[1] != "temp":
+# # # # # #             temperature.append(int(row[1]))
+# # # # # #     print(temperature)
+
+# # # # # # import pandas as pd
+# # # # # # data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
+# # # # # # print(type(data["temp"]))
+# # # # # # print(data["temp"].mean())
 
 # # # # # import pandas as pd
-# # # # # data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
-# # # # # print(type(data["temp"]))
-# # # # # print(data["temp"].mean())
+# # # # # a = [1, 7, 2]
+# # # # # myvar = pd.Series(a)
+# # # # # print(myvar)
+# # # # # print(myvar[0])
+# # # # # print(myvar[1])
+# # # # # print(myvar[2])
+# # # # # print(myvar[1:3])
+# # # # # # print(myvar[1:])  # Slicing from index 1 to the end
 
 # # # # import pandas as pd
 # # # # a = [1, 7, 2]
-# # # # myvar = pd.Series(a)
-# # # # print(myvar)
-# # # # print(myvar[0])
-# # # # print(myvar[1])
-# # # # print(myvar[2])
-# # # # print(myvar[1:3])
-# # # # # print(myvar[1:])  # Slicing from index 1 to the end
+# # # # myvar = pd.Series(a, index = ["x", "y", "z"])
+# # # # # print(myvar)
 
 # # # import pandas as pd
-# # # a = [1, 7, 2]
-# # # myvar = pd.Series(a, index = ["x", "y", "z"])
-# # # # print(myvar)
+# # # data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
+# # # print(type(data["temp"]))
+# # # print(data["temp"].mean())
+# # # print(data["temp"].max())
+# # # x = data["day"]
+# # # print(x)
+
 
 # # import pandas as pd
-# # data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
-# # print(type(data["temp"]))
-# # print(data["temp"].mean())
-# # print(data["temp"].max())
-# # x = data["day"]
-# # print(x)
+# # months_days = {    "January": 31,
+# #     "February": 28,
+# #     "March": 31,
+# #     "April": 30,
+# #     "May": 31,
+# #     "June": 30,
+# #     "July": 31,
+# #     "August": 31,
+# #     "September": 30,
+# #     "October": 31,
+# #     "November": 30,
+# #     "December": 31
+# #     }
 
+# # var = pd.Series(months_days)
+# # print(var)
+# # var_1 = pd.Series(months_days, index=["January", "March", "May", "July", "August", "October"])
+# # print(var_1)  
 
 # import pandas as pd
-# months_days = {    "January": 31,
-#     "February": 28,
-#     "March": 31,
-#     "April": 30,
-#     "May": 31,
-#     "June": 30,
-#     "July": 31,
-#     "August": 31,
-#     "September": 30,
-#     "October": 31,
-#     "November": 30,
-#     "December": 31
-#     }
-
-# var = pd.Series(months_days)
-# print(var)
-# var_1 = pd.Series(months_days, index=["January", "March", "May", "July", "August", "October"])
-# print(var_1)  
-
+# data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
+# data_dict = data.to_dict()
+# print(data_dict)
+# x = data["temp"].to_list()
+# print(x)
 import pandas as pd
 data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\my progress\weather_data.csv")
 data_dict = data.to_dict()
-print(data_dict)
-x = data["temp"].to_list()
-print(x)
+temp_list = data["temp"].to_list()
+length = len(temp_list)
+mean = data["temp"].mean()
+max = data["temp"].max()
+print(f"all the detailes of the given data is:  {data_dict}")
+print(f"the list of all the temperature is: {temp_list}")
+print(f"the length of the temperature list is: {length}")
+print(f"the mean of the temperature is: {mean}")
+print(f"the maximum temperature is: {max}")
+print(data["condition"])
+print(data.condition)
+print(data[data.day == "Monday"])
+
