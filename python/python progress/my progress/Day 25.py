@@ -82,3 +82,9 @@ print(data["condition"])
 print(data.condition)
 print(data[data.day == "Monday"])
 
+print(data[data.temp == data.temp.max()])
+print(data[data.temp == data.temp.min()])
+print(data[data.day == "Monday"])
+monday = data[data.day == "Monday"]
+print(monday.condition)
+
