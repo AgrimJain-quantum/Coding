@@ -100,6 +100,10 @@
 
 import pandas as pd
 data  = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv") 
-data["Primary Fur Color"] == "Gray"
-gray_squirrels = data[data["Primary Fur Color"] == "Gray"]
-print(f"Number of gray squirrels: {len(gray_squirrels)}")
+grey_squirrels_count = len(data[data["Primary Fur Color"] == "Gray"])
+red_squirrels_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
+black_squirrels_count = len(data[data["Primary Fur Color"] == "Black"])
+
+print(f"Number of gray squirrels: {grey_squirrels_count}")
+print(f"Number of red squirrels: {red_squirrels_count}")    
+print(f"Number of black squirrels: {black_squirrels_count}")
