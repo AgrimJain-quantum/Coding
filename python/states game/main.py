@@ -18,7 +18,7 @@ if answer_state in state_list:
     t.hideturtle()
     t.penup()
     state_data = data[data.state == answer_state]
-    t.goto(state_data.x, state_data.y)
+    t.goto(state_data.x.item(), state_data.y.item())
     t.write(state_data.state)
     
     
