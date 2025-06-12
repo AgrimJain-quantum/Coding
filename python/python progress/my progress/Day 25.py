@@ -112,6 +112,8 @@ data_dict = {
     "Fur Color": ["Gray", "Red", "Black"],
     "Count": [grey_squirrels_count, red_squirrels_count, black_squirrels_count],
 }
+re = data.corr()
+print(re)
 print(data_dict)
 
 
