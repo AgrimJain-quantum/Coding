@@ -4,7 +4,8 @@ name = "John"
 letter  = [letter  for letter in name]
 print(new_number)
 print(letter)
-range_list = [num * 2 for num in range (1, 11)]
+range_list = [num * 2 for num in range (1, 11)]+
+
 names = ["alex", "bob", "charlie", "dave"]
 short_names = [name for name in names if len(name)]
 print(range_list)
