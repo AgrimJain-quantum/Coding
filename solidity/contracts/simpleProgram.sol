@@ -12,6 +12,4 @@ contract  SimpleStorage {
     bytes32 favorite = "cat";
     bytes25 name = "Jonathan";
     string surname = "Smith";
-
-
 }
