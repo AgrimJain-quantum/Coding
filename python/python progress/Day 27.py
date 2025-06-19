@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import Button
+from tkinter import *
 window = tk.Tk()
 window.title("My First GUI Program")
 window.minsize(width=500, height=300)
@@ -14,18 +14,18 @@ my_label.config(text = "New Text Again")
 
 def button_clicked():
     print("I got clicked")
-    my_label.config(text="I got clicked")
+    new_text = input.get()
+    my_label.config(text= new_text)
 
 
     
 button = Button(text = "Click Me", command=button_clicked, font=("Arial", 24, "bold", "italic"))
 button.pack(expand = True)
 
-
-
-
-
-
+#entry
+input = Entry(width = 10)
+input.pack(expand = True)
+print(input.get()  ) 
 
 
 
