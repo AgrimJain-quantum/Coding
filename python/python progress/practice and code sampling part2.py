@@ -49,3 +49,20 @@ my_fuction()
 def greet(name):
     print(f"Hello, {name}!")  # Code block for the function
 greet("Agrim")
+
+def add(*args):
+    print(args[1])
+    sum = 0
+    for n in args:
+        sum += n
+    return sum
+print(add(1, 2, 3))
+
+def calculate(n, **kwargs):
+    print(kwargs)
+    # for key, value in kwargs.items():
+    #     print(f"{key} = {value}")
+    n += kwargs["add"]
+    n *= kwargs["multiply"]
+    print(n)
+calculate(2, add = 3, multiply = 5)  
