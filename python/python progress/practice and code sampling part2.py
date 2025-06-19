@@ -19,56 +19,58 @@
 #     return a + b
 # print(print_sum_two_numbers(5, 7))
 
-def print_sum_two_numbers(a, b):
-    return a + b
-    print(a + b)            
-print(print_sum_two_numbers(5, 7))
+# def print_sum_two_numbers(a, b):
+#     return a + b
+#     print(a + b)            
+# print(print_sum_two_numbers(5, 7))
 
-def print_sum_two_numbers(a, b):
-    print(a + b)
-    return a + b
-print(print_sum_two_numbers(5, 7))
+# def print_sum_two_numbers(a, b):
+#     print(a + b)
+#     return a + b
+# print(print_sum_two_numbers(5, 7))
 
 
-for i in range(5):
-    print(i)
-else:
-    print("Loop completed")
+# for i in range(5):
+#     print(i)
+# else:
+#     print("Loop completed")
 
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    return n * factorial(n - 1)
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * factorial(n - 1)
 
-print(factorial(5))  # Output: 120
+# print(factorial(5))  # Output: 120
 
-def my_fuction():
-    print("Hello from a function")
-my_fuction()
+# def my_fuction():
+#     print("Hello from a function")
+# my_fuction()
 
-def greet(name):
-    print(f"Hello, {name}!")  # Code block for the function
-greet("Agrim")
+# def greet(name):
+#     print(f"Hello, {name}!")  # Code block for the function
+# greet("Agrim")
 
-def add(*args):
-    print(args[1])
-    sum = 0
-    for n in args:
-        sum += n
-    return sum
-print(add(1, 2, 3))
+# def add(*args):
+#     print(args[1])
+#     sum = 0
+#     for n in args:
+#         sum += n
+#     return sum
+# print(add(1, 2, 3))
 
-def calculate(n, **kwargs):
-    print(kwargs)
-    # for key, value in kwargs.items():
-    #     print(f"{key} = {value}")
-    n += kwargs["add"]
-    n *= kwargs["multiply"]
-    print(n)
-calculate(2, add = 3, multiply = 5)  
+# def calculate(n, **kwargs):
+#     print(kwargs)
+#     # for key, value in kwargs.items():
+#     #     print(f"{key} = {value}")
+#     n += kwargs["add"]
+#     n *= kwargs["multiply"]
+#     print(n)
+# calculate(2, add = 3, multiply = 5)  
 
 class Car:
     def __init__(self,**kw):
         self.make = kw["make"]
         self.model = kw["model"]
+my_car = Car(make="Nissan", model="GTR")
+print(my_car.make)
         
