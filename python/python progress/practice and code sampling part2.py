@@ -71,8 +71,8 @@ class Car:
     def __init__(self,**kw):
         self.make = kw["make"]
         self.model = kw["model"]
-        self.color = kw["red"]
-        self.seats = kw[5]  # Default to 5 seats if not provided 
-my_car = Car(make="Nissan", model="GTR")
+        self.color = kw["color"]
+        self.seats = kw["seats"]  # Default to 5 seats if not provided 
+my_car = Car(make="Nissan", model="GTR",  color="Red", seats=4)
 print(my_car.seats)
         
