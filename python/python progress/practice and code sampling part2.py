@@ -67,12 +67,16 @@
 #     print(n)
 # calculate(2, add = 3, multiply = 5)  
 
-class Car:
-    def __init__(self,**kw):
-        self.make = kw["make"]
-        self.model = kw["model"]
-        self.color = kw["color"]
-        self.seats = kw["seats"]  # Default to 5 seats if not provided 
-my_car = Car(make="Nissan", model="GTR",  color="Red", seats=4)
-print(my_car.seats)
-        
+# class Car:
+#     def __init__(self,**kw):
+#         self.make = kw["make"]
+#         self.model = kw["model"]
+#         self.color = kw["color"]
+#         self.seats = kw["seats"]  # Default to 5 seats if not provided 
+# my_car = Car(make="Nissan", model="GTR",  color="Red", seats=4)
+# print(my_car.seats)
+
+def bar(spam, eggs, toast='yes please!', ham=0):
+    print(spam, eggs, toast, ham)
+ 
+bar(1, 2)
