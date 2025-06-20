@@ -1,7 +1,9 @@
 from tkinter import *
 
 def miles_to_km():
-    
+    miles = miles_input.get()
+    km = miles * 1.60934
+    kilometer_result_label.config(text = km)
 
 window = Tk()
 window.title("miles to km converter")
