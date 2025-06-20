@@ -9,6 +9,7 @@ window.config(padx = 20, pady = 20)
 my_label = tk.Label(text="I am a label", font=("Arial", 24, "bold", "italic"))
 my_label.config(text = "New Text Again")
 my_label.grid(column=0, row=0)
+my_label.config(padx=50, pady=50)
 
 
 
@@ -18,7 +19,8 @@ def button_clicked():
     new_text = input.get()
     my_label.config(text= new_text)       
 button = Button(text = "Click Me", command=button_clicked, font=("Arial", 10, "bold", "italic"))
-button.grid(column=1, row=1 )
+button.grid(column=1, row=1)
+button.config(padx=20, pady=20)
 
 #entry
 input = Entry(width = 10)
