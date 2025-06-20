@@ -1,8 +1,11 @@
 from tkinter import *
 
+def miles_to_km():
+    
+
 window = Tk()
 window.title("miles to km converter")
-
+window.config(padx = 20, pady = 20)
 
 miles_input = Entry(width = 10)
 miles_input.grid(column = 1 , row = 0 )
@@ -21,15 +24,6 @@ kilometer_label.grid(column = 2, row = 1 )
 
 calculate_button = Button(text = "Calculate")
 calculate_button.grid(column = 1, row = 2 )
-
-
-
-
-
-
-
-
-
 
 
 
