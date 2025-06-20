@@ -11,12 +11,10 @@ my_label["text"] = "New Text"
 my_label.config(text = "New Text Again")
 
 #button
-
 def button_clicked():
     print("I got clicked")
     new_text = input.get()
-    my_label.config(text= new_text)
-        
+    my_label.config(text= new_text)       
 button = Button(text = "Click Me", command=button_clicked, font=("Arial", 24, "bold", "italic"))
 button.pack(expand = True)
 
