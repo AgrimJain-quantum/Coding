@@ -16,11 +16,11 @@ def button_clicked():
     new_text = input.get()
     my_label.config(text= new_text)       
 button = Button(text = "Click Me", command=button_clicked, font=("Arial", 24, "bold", "italic"))
-button.pack(expand = True)
+button.pack(side = "bottom", expand = True)
 
 #entry
 input = Entry(width = 10)
-input.pack(expand = True)
+input.pack(side = "right", expand = True)
 print(input.get()  ) 
 
 
