@@ -6,9 +6,10 @@ window.minsize(width=500, height=300)
 
 #label
 my_label = tk.Label(text="I am a label", font=("Arial", 24, "bold", "italic"))
-my_label.pack(side = "left")
-my_label["text"] = "New Text"
 my_label.config(text = "New Text Again")
+my_label.grid(column=0, row=0)
+
+
 
 #button
 def button_clicked():
@@ -16,11 +17,11 @@ def button_clicked():
     new_text = input.get()
     my_label.config(text= new_text)       
 button = Button(text = "Click Me", command=button_clicked, font=("Arial", 24, "bold", "italic"))
-button.pack(side = "bottom")
+button.grid(column=1, row=1 )
 
 #entry
 input = Entry(width = 10)
-input.pack(side = "right")
+input.grid(column=2, row=2)
 print(input.get()  ) 
 
 
