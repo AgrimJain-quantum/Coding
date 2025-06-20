@@ -12,7 +12,6 @@ my_label.grid(column=0, row=0)
 my_label.config(padx=50, pady=50)
 
 
-
 #button
 def button_clicked():
     print("I got clicked")
@@ -22,11 +21,11 @@ button = Button(text = "Click Me", command=button_clicked, font=("Arial", 10, "b
 button.grid(column=1, row=1)
 button.config(padx=20, pady=20)
 
+
 #entry
 input = Entry(width = 10)
 input.grid(column=2, row=2)
 print(input.get()) 
-
 
 
 
