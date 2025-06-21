@@ -30,11 +30,11 @@ LONG_BREAK_MIN = 20
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Pomodoro Timer")
-window.config(padx = 100, pady = 50)
-canvas  = Canvas(width=200, height=224) 
+window.config(padx = 100, pady = 50, bg = YELLOW)
+canvas  = Canvas(width=200, height=224, bg = YELLOW, highlightthickness = 0 ) 
 PhotoImage = PhotoImage(file = r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\tomato.png")
-canvas.create_image(102, 112, image = PhotoImage)
-canvas.create_text(102, 130, text = "00:00", fill = "white", font = (FONT_NAME, 35, "bold"), tag = "timer")
+canvas.create_image(100, 112, image = PhotoImage)
+canvas.create_text(100, 130, text = "00:00", fill = "white", font = (FONT_NAME, 35, "bold"), tag = "timer")
 canvas.pack()
 
 
