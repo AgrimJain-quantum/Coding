@@ -32,7 +32,8 @@ window = Tk()
 window.title("Pomodoro Timer")
 window.config(padx = 100, pady = 50, bg = YELLOW)
 canvas  = Canvas(width=200, height=224)
-canvas.create_image(100, 112, image = r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\tomato.png")
+PhotoImage = PhotoImage(file = r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\tomato.png")
+canvas.create_image(100, 112, image = PhotoImage)
 
 
 
