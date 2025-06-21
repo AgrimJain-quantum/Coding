@@ -14,6 +14,22 @@ LONG_BREAK_MIN = 20
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+import time
+
+count = 5
+while True:
+    time.sleep(1)
+    count -= 1
+    print(count)
+     
+
+
+
+
+
+
+
+
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
