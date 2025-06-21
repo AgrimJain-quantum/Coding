@@ -19,7 +19,7 @@ LONG_BREAK_MIN = 20
 window = Tk()
 window.title("Pomodoro Timer")
 window.config(padx = 100, pady = 50, bg = YELLOW)
-
+ 
 title_label = Label(text = "Timer", font = (FONT_NAME, 24, "bold"),fg =GREEN,bg = YELLOW)
 title_label.grid(column=1, row=0)
 
