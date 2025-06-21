@@ -15,12 +15,8 @@ LONG_BREAK_MIN = 20
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 import time
-
-count = 5
-while True:
-    time.sleep(1)
-    count -= 1
-    print(count)
+def countdown(count):
+    window.after
      
 
 
