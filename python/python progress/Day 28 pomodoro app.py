@@ -14,8 +14,8 @@ LONG_BREAK_MIN = 20
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
-    pass
-
+    count = WORK_MIN * 60
+    
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def countdown(count):
     canvas.itemconfig(timer_text, text = count)
