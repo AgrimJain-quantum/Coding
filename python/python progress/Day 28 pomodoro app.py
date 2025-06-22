@@ -16,8 +16,9 @@ LONG_BREAK_MIN = 20
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 import time
 def countdown(count):
-    
-    window.after(1000, countdown, count - 1)
+    print(count)
+    if count > 0:
+       window.after(1000, countdown, count - 1)
     minutes = count // 60
     seconds = count % 60
 
@@ -37,7 +38,7 @@ title_label.grid(column=1, row=0)
 canvas  = Canvas(width=200, height=224, bg = YELLOW, highlightthickness = 0 ) 
 PhotoImage = PhotoImage(file = r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\tomato.png")
 canvas.create_image(100, 112, image = PhotoImage)
-canvas.create_text(100, 130, text = "00:00", fill = "white", font = (FONT_NAME, 35, "bold"), tag = "timer")
+timer_text = canvas.create_text(100, 130, text = "00:00", fill = "white", font = (FONT_NAME, 35, "bold"), tag = "timer")
 canvas.grid(column=1, row=1)
 
 #buttons
