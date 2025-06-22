@@ -1,4 +1,5 @@
 from tkinter import * 
+import time
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#f10b0b"
@@ -12,9 +13,10 @@ LONG_BREAK_MIN = 20
 # ---------------------------- TIMER RESET ------------------------------- # 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
+def start_timer():
+    pass
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
-import time
 def countdown(count):
     canvas.itemconfig(timer_text, text = count)
     if count > 0:
