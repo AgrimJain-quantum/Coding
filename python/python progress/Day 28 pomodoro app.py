@@ -16,9 +16,10 @@ LONG_BREAK_MIN = 20
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 import time
 def countdown(count):
+    
     window.after(1000, countdown, count - 1)
-
-
+    minutes = count // 60
+    seconds = count % 60
 
 
 
@@ -27,7 +28,7 @@ def countdown(count):
 window = Tk()
 window.title("Pomodoro Timer")
 window.config(padx = 100, pady = 50, bg = YELLOW)
-count
+countdown(5)
 #title 
 title_label = Label(text = "Timer", font = (FONT_NAME, 35, "bold"),fg =GREEN,bg = YELLOW)
 title_label.grid(column=1, row=0)
