@@ -16,11 +16,10 @@ LONG_BREAK_MIN = 20
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 import time
 def countdown(count):
-    print(count)
+    canvas.itemconfig(timer_text, text = count)
     if count > 0:
        window.after(1000, countdown, count - 1)
-    minutes = count // 60
-    seconds = count % 60
+
 
 
 
@@ -29,7 +28,7 @@ def countdown(count):
 window = Tk()
 window.title("Pomodoro Timer")
 window.config(padx = 100, pady = 50, bg = YELLOW)
-countdown(5)
+
 #title 
 title_label = Label(text = "Timer", font = (FONT_NAME, 35, "bold"),fg =GREEN,bg = YELLOW)
 title_label.grid(column=1, row=0)
@@ -41,6 +40,7 @@ canvas.create_image(100, 112, image = PhotoImage)
 timer_text = canvas.create_text(100, 130, text = "00:00", fill = "white", font = (FONT_NAME, 35, "bold"), tag = "timer")
 canvas.grid(column=1, row=1)
 
+countdown(5)
 #buttons
 ###start button
 start = Button(text = "Start", font = (FONT_NAME, 10, "bold"), command = None, highlightthickness = 0)
@@ -53,6 +53,7 @@ reset_button.grid(column = 2, row = 2)
 #check mark
 check_mark = Label(text = "✓", fg = GREEN, bg = YELLOW, font = (FONT_NAME, 30, "bold"))
 check_mark.grid(column = 1, row = 3)
+
 
 
 
