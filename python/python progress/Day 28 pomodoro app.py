@@ -14,7 +14,8 @@ LONG_BREAK_MIN = 20
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
-    count = WORK_MIN * 60
+    countdown(5 * 60)
+    '''for testing purpose we using'''
     
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def countdown(count):
@@ -42,10 +43,10 @@ canvas.create_image(100, 112, image = PhotoImage)
 timer_text = canvas.create_text(100, 130, text = "00:00", fill = "white", font = (FONT_NAME, 35, "bold"), tag = "timer")
 canvas.grid(column=1, row=1)
 
-countdown(5)
+
 #buttons
 ###start button
-start = Button(text = "Start", font = (FONT_NAME, 10, "bold"), command = None, highlightthickness = 0)
+start = Button(text = "Start", font = (FONT_NAME, 10, "bold"), command = start_timer, highlightthickness = 0)
 start.grid(column = 0, row = 2)
 
 ###stop button
