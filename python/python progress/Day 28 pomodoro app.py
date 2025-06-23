@@ -40,7 +40,11 @@ def countdown(count):
        window.after(1000, countdown, count - 1)
     else:
         start_timer()
-        
+        mark = "✓"
+        work_sessions = math.floor(reps / 2)
+        for _ in range(work_sessions):
+            mark += "✓"
+        check_mark.config(text = mark)
 
 
 
