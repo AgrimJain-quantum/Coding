@@ -21,7 +21,7 @@ def reset_timer():
     window.after_cancel(timer)
     canvas.itemconfig(timer_text, text="00:00")
     title_label.config(text="Timer", fg=GREEN)
-    check_mark.config(text="")
+    check_mark.config(text="✓")
     reps = 0
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
@@ -79,7 +79,7 @@ start_button.grid(column=0, row=2)
 reset_button = Button(text="Reset", font=(FONT_NAME, 10, "bold"), command=reset_timer, highlightthickness=0)
 reset_button.grid(column=2, row=2)
 
-check_mark = Label(text="", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 30, "bold"))
+check_mark = Label(text="✓", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 30, "bold"))
 check_mark.grid(column=1, row=3)
 
 window.mainloop()
