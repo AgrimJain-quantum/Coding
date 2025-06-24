@@ -1,28 +1,63 @@
-# # thistuple = ("apple", "banana", "cherry")
-# # print(thistuple)
-# # # thistuple = ( "banana", "cherry")
-# # # if "apple" in thistuple:
-# # #   print("Yes, 'apple' is in the fruits tuple")
-# # # else:
-# # #   print("No, 'apple' is not in the fruits tuple")   
-# # print(thistuple[-1])
-# thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
-# print(thistuple[1:2])
-# print(thistuple[-4:-1])
+#----------------------ui setup----------------------#
+from tkinter import *
+window = Tk()
+window.title("Password Manager")
+window.config(padx=50, pady=50)
 
-fruits = ("apple", "banana", "cherry")
-
-(green, yellow, red) = fruits
-
-print(green)
-print(yellow)
-print(red)
+canvas = Canvas(width=200, height=200)
+logo_img = PhotoImage(file=r"C:\Users\Agrim Jain\Desktop\Coding\python\python progress\logo_image.png")
+canvas.create_image(100, 100, image=logo_img)
+canvas.grid(column=1, row=0)
 
 
-numbers = (1, 2, 3, 4, 5)
-(one, two, three, four, five) = numbers
-print(one)
-print(two)
-print(three)
-print(four)
-print(five)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.mainloop()
