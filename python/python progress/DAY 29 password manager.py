@@ -1,21 +1,19 @@
 from tkinter import *
+from tkinter import messagebox
+
 
 
 #----------------------save password function----------------------#
 def save():
+    website = website_entry.get()
+    email = email_entry.get()
+    password = password_entry.get()
+    
     with open("data.txt", "a") as data_file:
-        website_entry_text = website_entry.get()
-        email_entry_text = email_entry.get()    
-        password_entry_text = password_entry.get()
-        if len(website_entry_text) == 0 or len(email_entry_text) == 0 or len(password_entry_text) == 0:
-            print("Please fill all fields")
-        else:
-            data_file.write(f"{website_entry_text} | {email_entry_text} | {password_entry_text}\n")
-            website_entry.delete(0, END)
-            password_entry.delete(0, END)
-            print("Data saved successfully!")
-            # Optionally, you can clear the email entry as well
-            # email_entry.delete(0, END)
+        data_file.write(f"{website} | {email} | {password}\n")
+        website_entry.delete(0, END)
+        password_entry.delete(0, END)
+
 
 
 
