@@ -9,12 +9,20 @@ def save():
     email = email_entry.get()
     password = password_entry.get()
     
-    with open("data.txt", "a") as data_file:
-        data_file.write(f"{website} | {email} | {password}\n")
-        website_entry.delete(0, END)
-        password_entry.delete(0, END)
+    if len(website) == 0 or len(password) == 0:
+        messagebox.showerror(title = "Error" , message = "please don't leave any fields empty")
+        
+    
+    
+    display_message = (f"These are the details entered:\nWebsite: {website}\nEmail: {email}\nPassword: {password}\nIs it ok to save?")
+    is_ok = messagebox.askinfo(title = website, message = display_message)
+    if is_ok:
+        with open("data.txt", "a") as data_file:
+            data_file.write(f"{website} | {email} | {password}\n")
+            website_entry.delete(0, END)
+            password_entry.delete(0, END)
 
-
+    
 
 
 #----------------------ui setup----------------------#
@@ -54,46 +62,6 @@ add_button = Button(text = "Add", width=36, command=save)
 
 generate_password_button.grid(column=1, row=3,columnspan=2,sticky="E") 
 add_button.grid(column=1, row=4, columnspan=2, sticky="W")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
