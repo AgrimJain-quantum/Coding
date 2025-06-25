@@ -3,7 +3,19 @@ from tkinter import *
 
 #----------------------save password function----------------------#
 def save():
-    
+    with open("data.txt", "a") as data_file:
+        website_entry_text = website_entry.get()
+        email_entry_text = email_entry.get()    
+        password_entry_text = password_entry.get()
+        if len(website_entry_text) == 0 or len(email_entry_text) == 0 or len(password_entry_text) == 0:
+            print("Please fill all fields")
+        else:
+            data_file.write(f"{website_entry_text} | {email_entry_text} | {password_entry_text}\n")
+            website_entry.delete(0, END)
+            password_entry.delete(0, END)
+            print("Data saved successfully!")
+            # Optionally, you can clear the email entry as well
+            # email_entry.delete(0, END)
 
 
 
