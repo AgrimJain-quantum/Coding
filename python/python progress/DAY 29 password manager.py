@@ -9,8 +9,30 @@ logo_img = PhotoImage(file=r"C:\Users\Agrim Jain\Desktop\Coding\python\python pr
 canvas.create_image(100, 100, image=logo_img)
 canvas.grid(column=1, row=0)
 
+#labels
+website_label = Label(text = "Website: ")
+email_label = Label(text = "Email/Username: ")
+password_label = Label(text = "Password: ")
 
+website_label.grid(column=0, row=1)
+email_label.grid(column=0, row=2)
+password_label.grid(column=0, row=3)
 
+#entries
+website_entry = Entry(width=35)
+email_entry = Entry(width=35)
+password_entry = Entry(width=21)
+
+website_entry.grid(column=1, row=1)
+email_entry.grid(column=1, row=2)
+password_entry.grid(column=1, row=3)
+
+#buttons
+generate_password_button = Button(text = "Generate Password")
+add_button = Button(text = "Add", width=36)
+
+generate_password_button.grid(column=2, row=3)
+add_button.grid(column=1, row=4, columnspan=2)
 
 
 
