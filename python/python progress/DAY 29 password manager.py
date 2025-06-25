@@ -1,5 +1,26 @@
-#----------------------ui setup----------------------#
 from tkinter import *
+
+
+#----------------------save password function----------------------#
+def save():
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#----------------------ui setup----------------------#
+
 window = Tk()
 window.title("Password Manager")
 window.config(padx=70, pady=70)
@@ -31,7 +52,7 @@ website_entry.focus()
 email_entry.insert(0, "agrimjain015@gmail.com")
 #buttons
 generate_password_button = Button(text = "Generate Password")
-add_button = Button(text = "Add", width=36)
+add_button = Button(text = "Add", width=36, command=save)
 
 generate_password_button.grid(column=1, row=3,columnspan=2,sticky="E") 
 add_button.grid(column=1, row=4, columnspan=2, sticky="W")
