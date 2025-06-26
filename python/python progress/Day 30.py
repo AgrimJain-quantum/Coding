@@ -18,8 +18,17 @@
 # mytuple = fruits * 2
 
 # print(mytuple)
-tuple2 = (1, 2, 3)
+# tuple2 = (1, 2, 3)
 
-tuple3 = tuple2 * 3
-print(tuple3)
-//
+# tuple3 = tuple2 * 3
+# print(tuple3)
+
+set1 = {'1', '2', '3'}
+print(set1)
+
+hisset = {"apple", "banana", "cherry"}
+print(hisset)
+
+set2 = {1,2,3,4,5}
+print(set2)
+thus =  
