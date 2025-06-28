@@ -34,8 +34,8 @@ def save():
         messagebox.showerror(title = "Error" , message = "please don't leave any fields empty")
     else:
         with open("data.json", "w") as data_file:
-            json.dump(new_data, data_file, indent = 4)
-            
+            #json.dump(new_data, data_file, indent = 4)
+            json.load()
         
         
     
