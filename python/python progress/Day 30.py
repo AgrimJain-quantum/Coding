@@ -78,6 +78,7 @@ def generate_phonetic():
         output_list = [phonetic_dict[letter] for letter in word]
     except KeyError:
         print("Sorry, only letters in the alphabet please.")
+        generate_phonetic()  # Retry input
     else:
         print(output_list)
 generate_phonetic()
