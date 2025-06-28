@@ -72,7 +72,6 @@
 import pandas as pd
 data = pd.read_csv(r"C:\Users\Agrim Jain\Desktop\Coding\python\nato names\nato_phonetic_alphabet.csv")
 phonetic_dict = {row.letter: row.code for (index, row) in data.iterrows()}
-
 word = input("enter a word: ").upper()
 try:
     output_list = [phonetic_dict[letter] for letter in word]
