@@ -33,7 +33,8 @@ def save():
     if len(website) == 0 or len(password) == 0:
         messagebox.showerror(title = "Error" , message = "please don't leave any fields empty")
     else:
-        
+        with open("data.json", "w") as data_file:
+            json.dump()
         
         
         
