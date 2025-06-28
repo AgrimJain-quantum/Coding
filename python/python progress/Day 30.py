@@ -13,3 +13,8 @@
 #type error
 text = "Hello"
 value = text + 5
+
+try:
+    file = open("Day 30.txt")
+except FileNotFoundError:
+    print("File not found. Please check the file path.")
