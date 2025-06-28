@@ -33,20 +33,13 @@ def save():
     if len(website) == 0 or len(password) == 0:
         messagebox.showerror(title = "Error" , message = "please don't leave any fields empty")
     else:
-        with open("data.json", "w") as data_file:
-            #reading old data
-            data = json.load(data_file)
-            #updating old data with new data
-            data.update(new_data)
-        with open("data.json", "w") as data_file:
-            #saving updated data
-            json.dump(data, data_file, indent=4)
-           
-            
-            
-            
-            website_entry.delete(0, END)
-            password_entry.delete(0, END)
+        
+        
+        
+        
+        
+        website_entry.delete(0, END)
+        password_entry.delete(0, END)
 
 #----------------------ui setup----------------------#
 
