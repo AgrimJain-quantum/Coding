@@ -11,8 +11,8 @@
 # value = list[5]
 
 #type error
-text = "Hello"
-value = text + 5
+# text = "Hello"
+# value = text + 5
 
 try:
     file = open("Day 30.txt")
