@@ -77,4 +77,5 @@ try:
     output_list = [phonetic_dict[letter] for letter in word]
 except KeyError:
     print("Sorry, only letters in the alphabet please.")
-print(output_list)
+else:
+    print(output_list)
