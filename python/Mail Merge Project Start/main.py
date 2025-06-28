@@ -10,4 +10,4 @@ with open(r"C:\Users\Agrim Jain\Desktop\Coding\python\Mail Merge Project Start\I
         new_letter = letter_contents.replace(PLACEHOLDER, name)
         with open(rf"C:\Users\Agrim Jain\Desktop\Coding\python\Mail Merge Project Start\Output\ReadyToSend\letter_for_{stripped_name}.txt", mode="w") as completed_letter:
             completed_letter.write(new_letter)
-        
+    
