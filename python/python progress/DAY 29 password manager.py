@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
 from random import *
+import json
 #---------------------password generator function---------------------#
-
 def generate_password():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -23,17 +23,30 @@ def save():
     website = website_entry.get()
     email = email_entry.get()
     password = password_entry.get()
+    new_data = {
+        website:{
+            "email" : email,
+            "password" : password
+        }
+    }
     
     if len(website) == 0 or len(password) == 0:
         messagebox.showerror(title = "Error" , message = "please don't leave any fields empty")
     else:
-        display_message = (f"These are the details entered:\nWebsite: {website}\nEmail: {email}\nPassword: {password}\nIs it ok to save?")
-        is_ok = messagebox.askokcancel(title = website, message = display_message)
-        if is_ok:
-            with open("data.txt", "a") as data_file:
-                data_file.write(f"{website} | {email} | {password}\n")
-                website_entry.delete(0, END)
-                password_entry.delete(0, END)
+        with open("data.json", "w") as data_file:
+            #reading old data
+            data = json.load(data_file)
+            #updating old data with new data
+            data.update(new_data)
+        with open("data.json", "w") as data_file:
+            #saving updated data
+            json.dump(data, data_file, indent=4)
+           
+            
+            
+            
+            website_entry.delete(0, END)
+            password_entry.delete(0, END)
 
 #----------------------ui setup----------------------#
 
