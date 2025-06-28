@@ -34,11 +34,11 @@ def save():
         messagebox.showerror(title = "Error" , message = "please don't leave any fields empty")
     else:
         with open("data.json", "w") as data_file:
-            json.dump()
+            json.dump(new_data, data_file, indent = 4)
+            
         
         
-        
-        
+    
         website_entry.delete(0, END)
         password_entry.delete(0, END)
 
