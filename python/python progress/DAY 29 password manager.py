@@ -49,6 +49,21 @@ def save():
             website_entry.delete(0, END)
             password_entry.delete(0, END)
 
+
+#----------------------ui setup----------------------#
+def find_password():
+
+
+
+
+
+
+
+
+
+
+
+
 #----------------------ui setup----------------------#
 
 window = Tk()
@@ -70,7 +85,7 @@ email_label.grid(column=0, row=2, sticky="W")
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3, sticky="W")
 #entries
-website_entry = Entry(width=43)
+website_entry = Entry(width=35)
 email_entry = Entry(width=43)
 password_entry = Entry(width=24)
 website_entry.grid(column=1, row=1, columnspan = 2, sticky = "W")
@@ -79,8 +94,10 @@ password_entry.grid(column=1, row=3, sticky = "W")
 website_entry.focus()
 email_entry.insert(0, "agrimjain015@gmail.com")
 #buttons
+search_button = Button(text = "Search", command = find_password)
 generate_password_button = Button(text = "Generate Password", command = generate_password)
-add_button = Button(text = "Add", width=36, command=save)
+add_button = Button(text = "Add", width=36, command = save)
+search_button.grid(column=2, row=1, sticky="E") 
 generate_password_button.grid(column=1, row=3,columnspan=2,sticky="E") 
 add_button.grid(column=1, row=4, columnspan=2, sticky="W")
 
