@@ -37,12 +37,10 @@ def save():
             #json.dump(new_data, data_file, indent = 4)
             data = json.load(data_file)
             data.update(new_data)
-        with open("data.json", "w") as data_file:
-            json.dump(data, data_file, indent = 4)            
-        
-    
-        website_entry.delete(0, END)
-        password_entry.delete(0, END)
+    with open("data.json", "w") as data_file:
+        json.dump(data, data_file, indent = 4)            
+    website_entry.delete(0, END)
+    password_entry.delete(0, END)
 
 #----------------------ui setup----------------------#
 
