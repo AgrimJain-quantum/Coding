@@ -184,3 +184,5 @@ plt.tight_layout()
 plt.savefig("enhanced_energy_simulation.png")
 plt.show()
 print("📊 Graph saved as enhanced_energy_simulation.png")
+
+
