@@ -57,6 +57,17 @@ class main {
       System.out.println("is student? " + isStudent);
       System.out.println("is graduated? " + isGraduated);
 
+      if(isStudent){
+        System.out.println("i am a student");
+      } else {
+        System.out.println("i am not a student");
+      }
+      String name = "agrim jain";
+      String school = "muj";
+      System.out.println("my name is: " + name);
+      System.out.println("my school is: " + school);
+      
+
 
     }
 }
